@@ -72,9 +72,9 @@ Do check out the Go package which I've written to build Kalam Kernel: [github.co
 
 ### Screengrabs
 
-![OpenMTP File Explorer](https://github.com/ganeshrvel/openmtp/raw/master/blobs/images/file-explorer-bluebg.jpg 'OpenMTP File Explorer')
+![文件管理功能示意图](blobs/images/safe-file-explorer.svg)
 
-![OpenMTP File Transfer](https://github.com/ganeshrvel/openmtp/raw/master/blobs/images/file-transfer-bluebg.jpg 'OpenMTP File Transfer')
+![文件传输功能示意图](blobs/images/safe-file-transfer.svg)
 
 ### Keyboard Shortcuts
 
@@ -374,3 +374,13 @@ Please feel free to contact me at ganeshrvel@outlook.com
 OpenMTP | Android File Transfer for macOS is released under the [MIT License](https://github.com/ganeshrvel/openmtp/blob/master/LICENSE 'MIT License').
 
 Copyright © 2018-Present Ganesh Rathinavel
+
+## Git 上传前检查
+
+运行 `yarn check-git` 检查将进入提交的当前文件，运行 `yarn check-git-history` 检查已有可达历史。检查只报告文件位置及问题类型，不显示敏感值，也不修改提交或推送远程。检查不代替第三方二进制的授权核实。
+
+`node_modules`、本地缓存、安装包、源码映射和凭据文件已配置忽略；已经被跟踪的文件不能靠 `.gitignore` 隐藏。Git 不上传 `.git/config`，但会上传提交作者信息与历史文件版本。删除当前文件不会清除历史中的同一内容。
+
+HDC 与配套 libusb 保留原有架构选择和捆绑逻辑。HDC 的四个官方 SDK 文件继续由 Git 跟踪，克隆后无需重新获取；安装包按架构自动捆绑。其固定摘要及编译路径元数据在检查中单独记录，相关再分发许可说明保留。具体修复、验证范围和待办统一见 [当天更新记录](update-history/2026-10-08-update-history.md)。
+
+本轮已在仓库外备份后清理全部可达本地历史，并为后续提交配置匿名占位邮箱；未推送远程。原提交 ID 已变化，远程已有旧历史的替换需要另外确认，不应直接合并旧历史。

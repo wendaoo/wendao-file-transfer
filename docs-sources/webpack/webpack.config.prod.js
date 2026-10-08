@@ -24,7 +24,6 @@ module.exports = {
       new TerserPlugin({
         parallel: true,
         terserOptions: {
-          sourceMap: true,
           mangle: true,
           output: {
             beautify: false,
@@ -44,7 +43,6 @@ module.exports = {
             loader: 'css-loader',
             options: {
               modules: true,
-              sourceMap: true,
               importLoaders: 1,
             },
           },

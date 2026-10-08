@@ -1,4 +1,4 @@
-name: wendao macOS build
+name: wendao macOS source validation
 on:
   push:
   pull_request:
@@ -6,7 +6,7 @@ on:
 permissions:
   contents: read
 jobs:
-  package:
+  source:
     strategy:
       fail-fast: false
       matrix:
@@ -14,17 +14,15 @@ jobs:
     runs-on: ${{ matrix.runner }}
     steps:
       - uses: actions/checkout@v4
+      - name: Check publishable source content
+        run: python3 scripts/shared/check-git-content.py
       - name: Install project-local toolchain and dependencies
         run: bash scripts/shared/bootstrap.sh
-      - name: Verify bundled resources
+      - name: Verify source build resources
         run: |
-          bash scripts/shared/build.sh check
+          node scripts/shared/check-resources.cjs
       - name: Device routing and transfer regressions
         run: bash scripts/shared/build.sh test
-      - name: Package unsigned local installer
-        run: bash scripts/shared/build.sh package
-      - uses: actions/upload-artifact@v4
-        with:
-          name: wendao-file-transfer-${{ matrix.runner }}
-          path: dist/*.dmg
-          if-no-files-found: error
+      - name: Compile application source
+        run: bash scripts/shared/build.sh build-source
+      # Installer upload is paused until the runtime and native license review is complete.

@@ -42,7 +42,9 @@
     "build-mac-drag": "bash scripts/local/build-mac-drag.sh",
     "build-ios": "bash scripts/local/build-ios.sh",
     "prepare-local": "node scripts/shared/check-resources.cjs",
-    "check-shared": "node scripts/shared/check-resources.cjs"
+    "check-shared": "node scripts/shared/check-resources.cjs",
+    "check-git": "python3 scripts/shared/check-git-content.py",
+    "check-git-history": "python3 scripts/shared/check-git-content.py --history"
   },
   "main": "./app/main.prod.js",
   "repository": {

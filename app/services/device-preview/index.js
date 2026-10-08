@@ -41,10 +41,6 @@ export function findHdc() {
     process.env.OPENMTP_HDC_PATH,
     path.join(rootPath, 'Contents/Resources/hdc/hdc'),
     path.join(rootPath, 'tools/hdc', `hdc_${hdcArch}`),
-    path.join(
-      homedir(),
-      'Library/Application Support/COUI Local Assistant/harmony-command-line-tools/x86_64/hdc'
-    ),
     path.join(homedir(), 'Library/Huawei/Sdk/hmscore/3.1.0/toolchains/hdc'),
     '/opt/homebrew/bin/hdc',
     '/usr/local/bin/hdc',

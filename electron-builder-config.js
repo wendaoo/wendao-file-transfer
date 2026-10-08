@@ -17,6 +17,12 @@ const getBinariesSupportedSystemArchitecture = () => {
 module.exports = () => {
   const isLocalBuild = process.env.OPENMTP_LOCAL_BUILD === 'true';
 
+  if (!isLocalBuild) {
+    throw new Error(
+      'Public release is blocked: Electron support and native redistribution review are incomplete. Use the local preview build for development.'
+    );
+  }
+
   const getExtraFiles = () => {
     const currentSystemArch = getBinariesSupportedSystemArchitecture();
 
@@ -96,9 +102,7 @@ module.exports = () => {
       'app/dist/',
       'app/app.html',
       'app/main.prod.js',
-      'app/main.prod.js.map',
       'app/*.main.prod.js',
-      'app/*.main.prod.js.map',
       'app/*.main.prod.js.LICENSE.txt',
       'app/services/mtp-worker.cjs',
       'package.json',

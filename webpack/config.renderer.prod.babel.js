@@ -14,7 +14,7 @@ import { PATHS } from '../app/constants/paths';
 import { pkginfo } from '../app/utils/pkginfo';
 
 export default merge(baseConfig, {
-  devtool: 'source-map',
+  devtool: false,
   mode: 'production',
   target: 'electron-renderer',
 
@@ -132,7 +132,7 @@ export default merge(baseConfig, {
             publicPath: './',
             limit: 10000,
             mimetype: 'application/font-woff',
-            name: 'fonts/[name].[hash].[ext]',
+            name: 'fonts/[name].[sha256:hash].[ext]',
           },
         },
       },
@@ -145,7 +145,7 @@ export default merge(baseConfig, {
             publicPath: './',
             limit: 10000,
             mimetype: 'application/font-woff',
-            name: 'fonts/[name].[hash].[ext]',
+            name: 'fonts/[name].[sha256:hash].[ext]',
           },
         },
       },
@@ -158,7 +158,7 @@ export default merge(baseConfig, {
             publicPath: './',
             limit: 10000,
             mimetype: 'application/octet-stream',
-            name: 'fonts/[name].[hash].[ext]',
+            name: 'fonts/[name].[sha256:hash].[ext]',
           },
         },
       },
@@ -169,7 +169,7 @@ export default merge(baseConfig, {
           loader: 'file-loader',
           options: {
             publicPath: './',
-            name: 'fonts/[name].[hash].[ext]',
+            name: 'fonts/[name].[sha256:hash].[ext]',
           },
         },
       },
@@ -182,7 +182,7 @@ export default merge(baseConfig, {
             publicPath: './',
             limit: 10000,
             mimetype: 'image/svg+xml',
-            name: 'images/[path][name].[hash].[ext]',
+            name: 'images/[name].[sha256:hash].[ext]',
           },
         },
       },
@@ -194,7 +194,7 @@ export default merge(baseConfig, {
             loader: 'url-loader',
             options: {
               limit: 10000,
-              name: 'images/[path][name].[hash].[ext]',
+              name: 'images/[name].[sha256:hash].[ext]',
             },
           },
         ],

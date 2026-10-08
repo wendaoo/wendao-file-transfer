@@ -43,7 +43,7 @@ for (const relative of ['tools/adb/adb', 'tools/hdc/hdc_arm64', 'tools/hdc/hdc_x
 }
 if (failures.length) {
   console.error(failures.join('\n'));
-  console.error('Download the complete repository, including build/ and tools/.');
+  console.error('Obtain missing HDC tools from the official SDK as described in tools/hdc/README.md; other native resources are checked in.');
   process.exit(1);
 }
 // Both HDC executables load the generic library name through @rpath.

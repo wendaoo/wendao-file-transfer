@@ -25,15 +25,20 @@ case "$action" in
   check) node scripts/shared/check-resources.cjs ;;
   test)
     export NODE_ENV=development
+    node scripts/local/verify-security.cjs
     node scripts/local/verify-ios-routing.cjs
     node scripts/local/verify-adb-routing.cjs
     node scripts/local/verify-native-queue.cjs
     node scripts/local/verify-video-packets.cjs
+    ;;
+  build-source)
+    yarn build-main
+    yarn build-renderer
     ;;
   build) yarn build-local ;;
   package) yarn package-local && node scripts/shared/verify-package.cjs ;;
   smoke) node scripts/shared/smoke-package.cjs ;;
   start) yarn start-local ;;
   dev) node scripts/shared/check-resources.cjs && yarn dev-ui ;;
-  *) echo 'Usage: bash scripts/shared/build.sh {install|check|test|build|package|smoke|start|dev}' >&2; exit 1 ;;
+  *) echo 'Usage: bash scripts/shared/build.sh {install|check|test|build-source|build|package|smoke|start|dev}' >&2; exit 1 ;;
 esac

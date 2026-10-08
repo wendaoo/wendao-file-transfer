@@ -79,3 +79,18 @@ install-forceful-dev.md
 /build/ios/*/bin/ios-photos
 /tools/hdc/hdc
 /tools/hdc/libusb_shared.dylib
+
+# Private credentials, local backups and review exports
+*.p12
+*.pfx
+*.key
+*.pem
+*.keystore
+*.jks
+*.mobileprovision
+*.bak
+*.orig
+*.rej
+/source-share*/
+/*source-share*.zip
+/REVIEW-RESULT.txt

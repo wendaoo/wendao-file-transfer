@@ -15,7 +15,7 @@ import { pkginfo } from '../app/utils/pkginfo';
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 export default merge(baseConfig, {
-  devtool: 'source-map',
+  devtool: false,
   mode: 'production',
   target: 'electron-main',
   entry: './app/main.dev',

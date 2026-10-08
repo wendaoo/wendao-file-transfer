@@ -66,7 +66,7 @@ const baseConfig = {
         },
       },
       {
-        test: /\.(?:ico|jpe?g|png|gif|webp)$/i,
+        test: /\.(?:ico|jpe?g|png|gif|webp|svg)$/i,
         type: 'asset/resource',
       },
     ],

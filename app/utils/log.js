@@ -6,12 +6,10 @@ import { PATHS } from '../constants/paths';
 import { appendFileAsync } from '../helpers/fileOps';
 import { dateTimeUnixTimestampNow } from './date';
 import { sentryService } from '../services/sentry';
-import { getDeviceInfo } from '../helpers/deviceInfo';
 import { isEmpty } from './funcs';
 import { getMtpModeSetting } from '../helpers/settings';
 import { redactHomeDirectory } from '../helpers/logs';
 import { isConsoleError } from './errors';
-import { getMachineId } from '../helpers/identifiers';
 
 const { logFile } = PATHS;
 
@@ -118,26 +116,15 @@ export const log = {
     // [Privacy] redact home directory path from the error log
     err = redactHomeDirectory(err);
 
-    let _deviceInfoStrigified = '';
-    const deviceInfo = getDeviceInfo();
     const mtpMode = getMtpModeSetting();
-    const uuid = getMachineId();
-
-    if (!isEmpty(deviceInfo)) {
-      Object.keys(deviceInfo).forEach((a) => {
-        const item = deviceInfo[a];
-
-        _deviceInfoStrigified += `${a}: ${item}${EOL}`;
-      });
-    }
 
     const _date = `Date Time: ${dateTimeUnixTimestampNow({
       monthInletters: true,
     })}`;
-    const _appInfo = `${EOL}App Name: ${APP_NAME}${EOL}App Version: ${APP_VERSION}${EOL}UUID: ${uuid}`;
+    const _appInfo = `${EOL}App Name: ${APP_NAME}${EOL}App Version: ${APP_VERSION}`;
     const _mtpMode = `${EOL}MTP Mode: ${mtpMode}`;
     const _osInfo = `OS type: ${os.type()} / OS Platform: ${os.platform()} / OS Release: ${os.release()}`;
-    const _error = `${sectionSeperator}${EOL}${_appInfo}${EOL}${_mtpMode}${EOL}${_date}${EOL}${_osInfo}${EOL}${_deviceInfoStrigified}${logType}: ${err}${EOL}${sectionSeperator}${EOL}`;
+    const _error = `${sectionSeperator}${EOL}${_appInfo}${EOL}${_mtpMode}${EOL}${_date}${EOL}${_osInfo}${EOL}${logType}: ${err}${EOL}${sectionSeperator}${EOL}`;
 
     appendFileAsync(logFile, _error);
 

@@ -6,6 +6,7 @@ import { app, BrowserWindow, ipcMain, nativeTheme } from 'electron';
 import electronIs from 'electron-is';
 import usbDetect from 'usb-detection';
 import process from 'process';
+import { protectWebContents } from './services/window-security';
 import { registerDeviceDrag } from './services/device-drag';
 import { registerIosFiles } from './services/ios-files';
 import { registerAdbFiles } from './services/adb-files';
@@ -49,6 +50,12 @@ import { IpcEvents } from './services/ipc-events/IpcEventType';
 import IpcEventService from './services/ipc-events/IpcEventHandler';
 import { isKalamModeSupported } from './helpers/binaries';
 import { fileExistsSync } from './helpers/fileOps';
+
+app.on('web-contents-created', (event, contents) => {
+  if (contents.getType() === 'window') {
+    protectWebContents(contents, PATHS.loadUrlPath);
+  }
+});
 
 app.setName(IS_DEV ? `${APP_NAME} Dev` : APP_NAME);
 app.setPath('userData', PATHS.profileDir);

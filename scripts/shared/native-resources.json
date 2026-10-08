@@ -2269,7 +2269,7 @@
     },
     {
       "path": "tools/hdc/README.md",
-      "sha256": "7d82806a3cf210fbeaa478726076a22c69883d3c8bbbb2adda52512ac38aa90b"
+      "sha256": "a33196d13413cef0515bc94765e59ebb410451f245da776b45df2ab986bb1958"
     },
     {
       "path": "tools/hdc/hdc_arm64",

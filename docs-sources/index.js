@@ -45,13 +45,13 @@ class Docs {
     this.gitHubLatestReleaseData = null;
     this.lazyLoadImages = {
       fileExplorer: {
-        imgSrc: 'file-explorer.png',
+        imgSrc: 'safe-file-explorer.svg',
         parentSelector: this.$el.appScreenshotFileExplorerImageWrapper,
         id: this.selectors.appScreenshotFileExplorerId,
         loader: this.selectors.spinner,
       },
       fileTransfer: {
-        imgSrc: 'file-transfer.png',
+        imgSrc: 'safe-file-transfer.svg',
         parentSelector: this.$el.appScreenshotFileTransferImageWrapper,
         id: this.selectors.appScreenshotFileTransferId,
         loader: this.selectors.spinner,
