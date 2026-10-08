@@ -1,0 +1,41 @@
+require('@babel/register');
+const assert = require('assert');
+const Module = require('module');
+const originalLoad = Module._load;
+const util = require('util');
+let running = 0, peak = 0, reads = 0;
+const commands = [];
+const mockExecute = async (binary, args) => {
+  reads++; running++; peak = Math.max(peak, running); commands.push(args);
+  await new Promise(resolve => setTimeout(resolve, 5));
+  running--;
+  return {stdout: Buffer.from('image')};
+};
+const mockExecFile = () => {};
+mockExecFile[util.promisify.custom] = mockExecute;
+Module._load = function(request, ...args) {
+  if (request === 'child_process') return {execFile: mockExecFile};
+  if (request === 'electron') return {nativeImage: {createFromBuffer: () => ({isEmpty: () => false, getSize: () => ({width:400,height:800}), resize: dimensions => ({toDataURL: () => JSON.stringify(dimensions)})})}};
+  return originalLoad.call(this,request,...args);
+};
+const thumbnail = require('../../app/services/adb-files/thumbnail').default;
+Module._load = originalLoad;
+(async () => {
+  const session = {adb:'/adb',serial:'target'};
+  const request = {serial:'target',filePath:"/Pictures/a ' 中文.png",size:100,dateAdded:'v1'};
+  const current = () => true;
+  assert.deepStrictEqual(await Promise.all([thumbnail(session,request,current),thumbnail(session,request,current)]), ['{"width":80,"height":160}','{"width":80,"height":160}']);
+  assert.strictEqual(reads,1);
+  assert.deepStrictEqual(commands[0].slice(0,3),['-s','target','exec-out']);
+  assert(commands[0][3].includes("'\\''"));
+  await thumbnail(session,request,current); assert.strictEqual(reads,1);
+  await thumbnail(session,{...request,dateAdded:'v2'},current); assert.strictEqual(reads,2);
+  assert.strictEqual(await thumbnail(session,{...request,serial:'other'},current),null);
+  assert.strictEqual(await thumbnail(session,{...request,size:21*1024*1024},current),null);
+  assert.strictEqual(await thumbnail(session,{...request,filePath:'/app.apk'},current),null);
+  await assert.rejects(thumbnail(session,{...request,filePath:'/../private.png'},current));
+  await thumbnail(session,{...request,filePath:'/gone.png'},()=>false); assert.strictEqual(reads,2);
+  await Promise.all(Array.from({length:8},(_,i)=>thumbnail(session,{...request,filePath:`/${i}.png`},current)));
+  assert.strictEqual(peak,2);
+  console.log('Thumbnails: target isolation, quoting, bounds, cache invalidation, deduplication, stale session and concurrency passed.');
+})().catch(error=>{console.error(error);process.exitCode=1;});

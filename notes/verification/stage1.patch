@@ -1,0 +1,320 @@
+--- a/app/classes/AppUpdate.js
++++ b/app/classes/AppUpdate.js
+@@ -1,5 +1,6 @@
+ import { BrowserWindow, dialog, ipcMain } from 'electron';
+ import { autoUpdater } from 'electron-updater';
++import { IS_LOCAL_BUILD } from '../constants/env';
+ import { isConnected } from '../utils/isOnline';
+ import { log } from '../utils/log';
+ import { isPackaged } from '../utils/isPackaged';
+@@ -116,6 +117,10 @@
+   }
+ 
+   init() {
++    if (IS_LOCAL_BUILD) {
++      return;
++    }
++
+     try {
+       if (this.updateInitFlag) {
+         return;
+@@ -239,6 +244,10 @@
+   }
+ 
+   checkForUpdates() {
++    if (IS_LOCAL_BUILD) {
++      return;
++    }
++
+     try {
+       this.setMainWindow();
+ 
+@@ -276,6 +285,10 @@
+   }
+ 
+   async forceCheck() {
++    if (IS_LOCAL_BUILD) {
++      return;
++    }
++
+     try {
+       this.setMainWindow();
+ 
+--- a/app/classes/Boot.js
++++ b/app/classes/Boot.js
+@@ -6,6 +6,7 @@
+  */
+ 
+ import { readdirSync } from 'fs';
++import { IS_LOCAL_BUILD } from '../constants/env';
+ import { PATHS } from '../constants/paths';
+ import {
+   fileExistsSync,
+@@ -51,7 +52,7 @@
+ 
+       // if the previous version of the profile directory exists then remove it
+       // issue: https://github.com/ganeshrvel/openmtp/issues/143
+-      if (await this.verifyDir(prevProfileDir)) {
++      if (!IS_LOCAL_BUILD && (await this.verifyDir(prevProfileDir))) {
+         await deleteFilesSync(prevProfileDir);
+       }
+ 
+--- a/app/constants/env.js
++++ b/app/constants/env.js
+@@ -2,6 +2,8 @@
+  * Constants
+  * Note: Don't import log helper file from utils here
+  */
++
++const isLocalBuild = process.env.OPENMTP_LOCAL_BUILD === 'true';
+ 
+ const isDev = process.env.NODE_ENV !== 'production';
+ const isProd = process.env.NODE_ENV === 'production';
+@@ -39,7 +41,16 @@
+   _env = 'debug';
+ }
+ 
+-module.exports.ENV_FLAVOR = config[_env];
++module.exports.IS_LOCAL_BUILD = isLocalBuild;
++
++module.exports.ENV_FLAVOR = isLocalBuild
++  ? {
++      ...config[_env],
++      reportToSenty: false,
++      enableGoogleAnalytics: false,
++      enableMixpanelAnalytics: false,
++    }
++  : config[_env];
+ 
+ module.exports.IS_DEV = isDev;
+ 
+--- a/app/constants/meta.js
++++ b/app/constants/meta.js
+@@ -3,6 +3,7 @@
+  * Note: Don't import log helper file from utils here
+  */
+ 
++import { IS_LOCAL_BUILD } from './env';
+ import { pkginfo } from '../utils/pkginfo';
+ 
+ const {
+@@ -16,7 +17,9 @@
+   bugs,
+ } = pkginfo;
+ 
+-export const APP_BUNDLE_ID = 'io.ganeshrvel.openmtp';
++export const APP_BUNDLE_ID = IS_LOCAL_BUILD
++  ? 'local.openmtp.preview'
++  : 'io.ganeshrvel.openmtp';
+ 
+ export const APP_NAME = `${productName}`;
+ 
+--- a/app/containers/Settings/reducers.js
++++ b/app/containers/Settings/reducers.js
+@@ -1,3 +1,4 @@
++import { IS_LOCAL_BUILD } from '../../constants/env';
+ import { actionTypes } from './actions';
+ import {
+   DEVICE_TYPE,
+@@ -15,11 +16,11 @@
+     lastFiredVersion: null,
+   },
+   toggleSettings: false,
+-  enableAutoUpdateCheck: true,
+-  enableBackgroundAutoUpdate: true,
++  enableAutoUpdateCheck: !IS_LOCAL_BUILD,
++  enableBackgroundAutoUpdate: !IS_LOCAL_BUILD,
+   // if the freshly installed version is a prerelease version then save [enablePrereleaseUpdates] as true
+   enablePrereleaseUpdates: isPrereleaseVersion() || false,
+-  enableAnalytics: true,
++  enableAnalytics: !IS_LOCAL_BUILD,
+   enableStatusBar: true,
+   enableUsbHotplug: false,
+   hideHiddenFiles: {
+--- a/app/main.dev.js
++++ b/app/main.dev.js
+@@ -8,7 +8,13 @@
+ import process from 'process';
+ import MenuBuilder from './menu';
+ import { log } from './utils/log';
+-import { DEBUG_PROD, ENV_FLAVOR, IS_DEV, IS_PROD } from './constants/env';
++import {
++  DEBUG_PROD,
++  ENV_FLAVOR,
++  IS_DEV,
++  IS_PROD,
++  IS_LOCAL_BUILD,
++} from './constants/env';
+ import AppUpdate from './classes/AppUpdate';
+ import { PATHS } from './constants/paths';
+ import { settingsStorage } from './helpers/storageHelper';
+@@ -33,6 +39,11 @@
+ import { isKalamModeSupported } from './helpers/binaries';
+ import { fileExistsSync } from './helpers/fileOps';
+ 
++if (IS_LOCAL_BUILD) {
++  app.setName('OpenMTP Preview');
++  app.setPath('userData', PATHS.profileDir);
++}
++
+ const remote = getRemoteWindow();
+ 
+ const isSingleInstance = app.requestSingleInstanceLock();
+@@ -257,9 +268,9 @@
+       try {
+         await createWindow();
+ 
+-        let appUpdaterEnable = true;
+-
+-        if (isPackaged && process.platform === 'darwin') {
++        let appUpdaterEnable = !IS_LOCAL_BUILD;
++
++        if (!IS_LOCAL_BUILD && isPackaged && process.platform === 'darwin') {
+           appUpdaterEnable = !isMas && app.isInApplicationsFolder();
+         }
+ 
+--- a/electron-builder-config.js
++++ b/electron-builder-config.js
+@@ -12,6 +12,8 @@
+ };
+ 
+ module.exports = () => {
++  const isLocalBuild = process.env.OPENMTP_LOCAL_BUILD === 'true';
++
+   const getExtraFiles = () => {
+     const currentSystemArch = getBinariesSupportedSystemArchitecture();
+ 
+@@ -43,23 +45,25 @@
+   };
+ 
+   return {
+-    productName: 'OpenMTP',
+-    appId: 'io.ganeshrvel.openmtp',
+-    forceCodeSigning: true,
++    productName: isLocalBuild ? 'OpenMTP Preview' : 'OpenMTP',
++    appId: isLocalBuild ? 'local.openmtp.preview' : 'io.ganeshrvel.openmtp',
++    forceCodeSigning: !isLocalBuild,
+     // eslint-disable-next-line no-template-curly-in-string
+     artifactName: '${name}-${version}-${os}-${arch}.${ext}',
+     copyright: '© Ganesh Rathinavel',
+     afterPack: './internals/scripts/AfterPack.js',
+     afterSign: './internals/scripts/Notarize.js',
+     npmRebuild: false,
+-    publish: [
+-      {
+-        provider: 'github',
+-        owner: 'ganeshrvel',
+-        repo: 'openmtp',
+-        private: false,
+-      },
+-    ],
++    publish: isLocalBuild
++      ? null
++      : [
++          {
++            provider: 'github',
++            owner: 'ganeshrvel',
++            repo: 'openmtp',
++            private: false,
++          },
++        ],
+     files: [
+       'app/dist/',
+       'app/app.html',
+--- a/internals/scripts/AfterPack.js
++++ b/internals/scripts/AfterPack.js
+@@ -26,5 +26,5 @@
+       break;
+   }
+ 
+-  return _promises;
++  return Promise.all(_promises);
+ };
+--- a/package.json
++++ b/package.json
+@@ -10,7 +10,7 @@
+     "build-main": "cross-env NODE_ENV=production webpack --config ./webpack/config.main.prod.babel.js --color",
+     "build-renderer": "cross-env NODE_ENV=production webpack --config ./webpack/config.renderer.prod.babel.js --color",
+     "dev": "cross-env NODE_ENV=development START_HOT=1 node -r @babel/register ./internals/scripts/CheckPortInUse.js && cross-env START_HOT=1 yarn start-renderer-dev",
+-    "dev-kalam-ffi": "./ffi/kalam/native/scripts/build.sh && yarn dev",
++    "dev-kalam-ffi": "zx ./ffi/kalam/native/scripts/build.mjs && yarn dev",
+     "package": "yarn build && electron-builder --config electron-builder-config.js build --publish never",
+     "package-all": "yarn build && electron-builder --config electron-builder-config.js build -mwl --publish never",
+     "package-mac": "yarn build && dotenv -- electron-builder --config electron-builder-config.js build --mac --publish never",
+@@ -34,7 +34,10 @@
+     "postlint-fix": "prettier --ignore-path .eslintignore --single-quote --write '**/*.*{js,jsx,json}'",
+     "postlint-styles-fix": "prettier --ignore-path .eslintignore --single-quote --write '**/*.{css,scss}'",
+     "preinstall": "internals/scripts/preinstall.sh",
+-    "postinstall": "yarn build-dll && electron-builder install-app-deps"
++    "postinstall": "yarn build-dll && electron-builder install-app-deps",
++    "build-local": "cross-env OPENMTP_LOCAL_BUILD=true yarn build",
++    "package-local": "yarn build-local && cross-env OPENMTP_LOCAL_BUILD=true CSC_IDENTITY_AUTO_DISCOVERY=false ELECTRON_NOTARIZE=NO electron-builder --config electron-builder-config.js --mac dmg --publish never",
++    "start-local": "cross-env NODE_ENV=production OPENMTP_LOCAL_BUILD=true electron ."
+   },
+   "main": "./app/main.prod.js",
+   "repository": {
+--- a/webpack/config.base.js
++++ b/webpack/config.base.js
+@@ -48,6 +48,7 @@
+ 
+     new webpack.EnvironmentPlugin({
+       NODE_ENV: 'production',
++      OPENMTP_LOCAL_BUILD: 'false',
+     }),
+ 
+     new webpack.DefinePlugin({
+--- a/webpack/config.main.prod.babel.js
++++ b/webpack/config.main.prod.babel.js
+@@ -4,7 +4,7 @@
+ 
+ import path from 'path';
+ import webpack from 'webpack';
+-import merge from 'webpack-merge';
++import { merge } from 'webpack-merge';
+ // import SentryWebpackPlugin from '@sentry/webpack-plugin';
+ import TerserPlugin from 'terser-webpack-plugin';
+ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
+--- a/webpack/config.renderer.dev.babel.js
++++ b/webpack/config.renderer.dev.babel.js
+@@ -9,7 +9,7 @@
+ import fs from 'fs';
+ import webpack from 'webpack';
+ import chalk from 'chalk';
+-import merge from 'webpack-merge';
++import { merge } from 'webpack-merge';
+ import { spawn, execSync } from 'child_process';
+ import baseConfig from './config.base';
+ import { PATHS } from '../app/constants/paths';
+@@ -215,9 +215,7 @@
+           sourceType: 'var',
+         }),
+ 
+-    new webpack.HotModuleReplacementPlugin({
+-      multiStep: false,
+-    }),
++    new webpack.HotModuleReplacementPlugin(),
+ 
+     new webpack.NoEmitOnErrorsPlugin(),
+ 
+--- a/webpack/config.renderer.dev.dll.babel.js
++++ b/webpack/config.renderer.dev.dll.babel.js
+@@ -6,7 +6,7 @@
+ 
+ import webpack from 'webpack';
+ import path from 'path';
+-import merge from 'webpack-merge';
++import { merge } from 'webpack-merge';
+ import baseConfig from './config.base';
+ import { PATHS } from '../app/constants/paths';
+ import CheckNodeEnv from '../internals/scripts/CheckNodeEnv';
+--- a/webpack/config.renderer.prod.babel.js
++++ b/webpack/config.renderer.prod.babel.js
+@@ -7,7 +7,7 @@
+ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+ // import SentryWebpackPlugin from '@sentry/webpack-plugin';
+ import OptimizeCSSAssetsPlugin from 'optimize-css-assets-webpack-plugin';
+-import merge from 'webpack-merge';
++import { merge } from 'webpack-merge';
+ import TerserPlugin from 'terser-webpack-plugin';
+ import baseConfig from './config.base';
+ import { PATHS } from '../app/constants/paths';

@@ -1,0 +1,30 @@
+name: wendao macOS build
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [macos-15-intel, macos-15]
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install project-local toolchain and dependencies
+        run: bash scripts/shared/bootstrap.sh
+      - name: Verify bundled resources
+        run: |
+          bash scripts/shared/build.sh check
+      - name: Device routing and transfer regressions
+        run: bash scripts/shared/build.sh test
+      - name: Package unsigned local installer
+        run: bash scripts/shared/build.sh package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wendao-file-transfer-${{ matrix.runner }}
+          path: dist/*.dmg
+          if-no-files-found: error

@@ -1,0 +1,18 @@
+require('@babel/register');
+const assert = require('assert');
+const { remotePath, quote, parseDirectory } = require('../../app/services/adb-files/protocol');
+assert.strictEqual(remotePath('/Download/a b'), '/sdcard/Download/a b');
+for (const value of ['../secret', '/a/../secret', '/a\0b']) assert.throws(() => remotePath(value));
+assert.throws(() => remotePath('/', false));
+assert.strictEqual(quote("a'b; $(x)"), "'a'\\''b; $(x)'");
+const paths = ['/sdcard/中文\nquote\' a', '/sdcard/.hidden', '/sdcard/folder', '/sdcard/link'];
+const output = paths.join('\0') + '\0\0' + '81a4 12 1700000000\n81a4 0 1700000000\n41ed 4096 1700000000\na1ff 4 1700000000\n';
+const nodes = parseDirectory(output, true);
+assert.strictEqual(nodes.length, 2);
+assert.strictEqual(nodes[0].name, "中文\nquote' a");
+assert.strictEqual(nodes[0].path, "/中文\nquote' a");
+assert.strictEqual(nodes[1].isFolder, true);
+assert.strictEqual(parseDirectory(output, false).length, 3);
+assert.deepStrictEqual(parseDirectory('\0\0', true), []);
+assert.throws(() => parseDirectory('/sdcard/a\0\0', true));
+console.log('ADB protocol: path confinement, shell quoting, special names, hidden files, symlinks and malformed metadata passed.');

@@ -1,0 +1,25 @@
+{
+  "package": "openssl@3",
+  "version": "3.2.1",
+  "sha256": "8d686e92b2c6960b7d6ed6523ad4260c608d4dedb555421580a1ae0d828d5236",
+  "source": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2024-01-30",
+    "org.opencontainers.image.description": "Cryptography and SSL/TLS Toolkit",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/openssl@3",
+    "org.opencontainers.image.license": "Apache-2.0",
+    "org.opencontainers.image.ref.name": "3.2.1",
+    "org.opencontainers.image.revision": "e80ea142471db587bc19244fcdfd33dcfbfeddf9",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/e80ea142471db587bc19244fcdfd33dcfbfeddf9/Formula/o/openssl@3.rb",
+    "org.opencontainers.image.title": "openssl@3",
+    "org.opencontainers.image.url": "https://openssl.org/",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "3.2.1"
+  },
+  "bottle": {
+    "org.opencontainers.image.ref.name": "3.2.1.ventura",
+    "sh.brew.bottle.digest": "8d686e92b2c6960b7d6ed6523ad4260c608d4dedb555421580a1ae0d828d5236",
+    "sh.brew.bottle.size": "9036897",
+    "sh.brew.tab": "{\"homebrew_version\":\"4.2.6-5-g2cb8efc\",\"changed_files\":[\"bin/c_rehash\",\"lib/pkgconfig/libcrypto.pc\",\"lib/pkgconfig/libssl.pc\",\"lib/pkgconfig/openssl.pc\",\"share/man/man1/openssl-ca.1ssl\",\"share/man/man7/fips_module.7ssl\",\"share/man/man7/ossl-guide-tls-introduction.7ssl\"],\"source_modified_time\":1706620496,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"ca-certificates\",\"version\":\"2023-12-12\",\"revision\":0,\"pkg_version\":\"2023-12-12\",\"declared_directly\":true}],\"arch\":\"x86_64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 13.6\",\"cpu_family\":\"penryn\",\"xcode\":\"15.1\",\"clt\":\"15.1.0.0.1.1700200546\",\"preferred_perl\":\"5.30\"}}"
+  }
+}

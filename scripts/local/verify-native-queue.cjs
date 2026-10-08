@@ -1,0 +1,17 @@
+require('@babel/register');
+const assert = require('assert');
+const Queue = require('../../ffi/kalam/src/NativeCallQueue').default;
+const queue = new Queue();
+const events = [];
+let finishTransfer;
+queue.enqueue(done => { events.push('transfer-start'); finishTransfer = done; });
+queue.enqueue(done => { events.push('refresh'); done(); });
+queue.enqueue(done => { events.push('dispose'); done(); });
+assert.deepStrictEqual(events, ['transfer-start']);
+finishTransfer();
+assert.deepStrictEqual(events, ['transfer-start', 'refresh', 'dispose']);
+finishTransfer();
+assert.strictEqual(queue.running, false);
+queue.enqueue(done => { events.push('next'); done(); });
+assert.strictEqual(events[3], 'next');
+console.log('Native MTP queue: no overlap, ordered refresh/dispose, idempotent release passed.');

@@ -1,0 +1,2361 @@
+{
+  "description": "Checked-in native inputs; generated helpers are excluded. Update hashes intentionally after reviewing resource changes.",
+  "files": [
+    {
+      "path": "build/mac/bin/amd64/kalam.dylib",
+      "sha256": "6ca10cdba5dafcd0265deca93a94f09beb7bbe5a92b43e3fb91e3fd09ee7c5be"
+    },
+    {
+      "path": "build/mac/bin/amd64/kalam.h",
+      "sha256": "a4eb1f15e100bcf1d013dc107ff737537433263548885efcf819709e93d0c35d"
+    },
+    {
+      "path": "build/mac/bin/amd64/kalam_debug_report",
+      "sha256": "c91ee37370bcda179eeea50e4306fbbc243899dcc6cf11a349e9f5067cf0e4e1",
+      "executable": true
+    },
+    {
+      "path": "build/mac/bin/amd64/libusb.dylib",
+      "sha256": "2c07428622e7bba693a71ea53efcad25a6c0a5ed5169231dd71f683e8bf76480"
+    },
+    {
+      "path": "build/mac/bin/arm64/kalam-seg5.dylib",
+      "sha256": "1c416907fe21a7cd24a94fb316fde2109a44c4791a13927c620b8e24aae0b191"
+    },
+    {
+      "path": "build/mac/bin/arm64/kalam-seg5.h",
+      "sha256": "61d099070087c57718da33d364c97eb304574f251bbee609d18479092d7c07a7"
+    },
+    {
+      "path": "build/mac/bin/arm64/kalam.dylib",
+      "sha256": "46b102c8aaa2c4854de3479834c5845331769d08af9c7b6c052aca73e45bc315"
+    },
+    {
+      "path": "build/mac/bin/arm64/kalam.h",
+      "sha256": "a4eb1f15e100bcf1d013dc107ff737537433263548885efcf819709e93d0c35d"
+    },
+    {
+      "path": "build/mac/bin/arm64/kalam_debug_report",
+      "sha256": "81a8db64421df377a484356a50478b79e31ae884b03c735b5aae75fe1d53c0ad",
+      "executable": true
+    },
+    {
+      "path": "build/mac/bin/arm64/kalam_debug_report-seg5",
+      "sha256": "3868bfe4ef2436847c2a4136c5b70ae780844ea6440d44266b0b9a112a20b350",
+      "executable": true
+    },
+    {
+      "path": "build/mac/bin/arm64/libusb-seg5.dylib",
+      "sha256": "e69759d341ebe6bcd25d41c9bc6b0a2d2d07893dac5dd370391955bc7296d8ec"
+    },
+    {
+      "path": "build/mac/bin/arm64/libusb.dylib",
+      "sha256": "63670b56796ffb68d4ef38f4758a09bf9d7a9f6697819a31fee1bcba56fe01ac"
+    },
+    {
+      "path": "build/mac/bin/medieval/amd64/kalam.dylib",
+      "sha256": "6e1bc55813a216cb073cd71a99128517fc480998d7af3f9db9510790b8eb973e"
+    },
+    {
+      "path": "build/mac/bin/medieval/amd64/kalam.h",
+      "sha256": "a4eb1f15e100bcf1d013dc107ff737537433263548885efcf819709e93d0c35d"
+    },
+    {
+      "path": "build/mac/bin/medieval/amd64/kalam_debug_report",
+      "sha256": "3ce77314e035d75e169fac04ee70e6f30fba82ee0b52849c46df27fee60d597b",
+      "executable": true
+    },
+    {
+      "path": "build/mac/bin/medieval/amd64/libusb.dylib",
+      "sha256": "2c07428622e7bba693a71ea53efcad25a6c0a5ed5169231dd71f683e8bf76480"
+    },
+    {
+      "path": "build/mac/bin/mtp-cli",
+      "sha256": "cc258fc60879d4792acf9f60deb9aafd4730b6536e9736e8fb325bad7e6e1ff6",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/asn1Coding",
+      "sha256": "694c5b17817735e8f4b19042226c1d0db8d476408f492705e33787333c230dc6",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/asn1Decoding",
+      "sha256": "1445391d3a1a76e7016a2cb16bfb7540bfd230efe86b9f2028060c35e24b403f",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/asn1Parser",
+      "sha256": "82c7819e0d6881ee8b60172d81469ec4aa3d5739cec2613778b3476350991837",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/c_rehash",
+      "sha256": "81e9f0c950f9341cb46f618eb6f8622328c2ad28dad07b8d253a335d614b3c4b",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevice_id",
+      "sha256": "55d541e854be4b58d11d885c6bbbe91057a693971ebafee3e5ee5c0cbaead98d",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevicebackup",
+      "sha256": "243b623752aa7216bc9387d4e83d7259d12d4e34d4c455857902fb0f8f158f6c",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevicebackup2",
+      "sha256": "80db6ac491b3ff093f725aed0bb4b7e26a30ac90d945432b627b8ac783582c44",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevicecrashreport",
+      "sha256": "38cd37928a0035a679bb6e58fadadd3839710996b2ec522b77f3b3608d9c6e64",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevicedate",
+      "sha256": "a48f8a7f7d25568fd15ce97cc62526d76c569bb9f067de61a1815122353f802d",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevicedebug",
+      "sha256": "5f812f0c49a2209d1943cb101748de6954f57f9323db8da3c01a6bb75d334019",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevicedebugserverproxy",
+      "sha256": "2bab8af56f116d29f0a377a22c253b3dbf1de3b7d78586a111d5e95a0bb2951e",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevicediagnostics",
+      "sha256": "0671265b989ebc424b9811f83627c138bd2742c7192b8af38ff0e4923c3099c0",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/ideviceenterrecovery",
+      "sha256": "e177187bf7e6d027b58af6e4efb70707967ccc6db86e9c218ac7840894e164a3",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/ideviceimagemounter",
+      "sha256": "e5cb121e62dc0b1991a078a6c3914fde533418c834711ecce7e561796519ecf4",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/ideviceinfo",
+      "sha256": "49ff02f9bc888d76580ee01fa92f94e20291777056fc6d1b8b1eb23586e01b9f",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevicename",
+      "sha256": "099d3f16f947ad5cebe5894f432051aa12aae65cce6ba454c92dbb991f75db08",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevicenotificationproxy",
+      "sha256": "36919df9c31af750dc3c831f71dda0a91ec4a91fa9bea1ddaa720d72a5718ef1",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevicepair",
+      "sha256": "806bc4612c1071d70a41d9158ff7d984a33e32da17880a9300710737efd93e90",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/ideviceprovision",
+      "sha256": "75b0c7dbdffb9cbe94a839edd369831876c66ea6fe8acfa3c1bcfe3881fe647c",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevicescreenshot",
+      "sha256": "2ca3211a58a5a9946a8c84b3c0b2c7d7b88fabf1b10e2358174db6bda1b2fe8e",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevicesetlocation",
+      "sha256": "bd36d399e14f757bc48e67b900352f498cf5dfe28a5c77e7d90f72b3d1e1d11d",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/idevicesyslog",
+      "sha256": "87fe66dabd970cf301a162536fec356d51d8997db1c13c1bb45dd6a6f270b2cb",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/inetcat",
+      "sha256": "4f91ce151de8256044b979f015d9a0508495be99fdb26ff60be4d54e40fec09a",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/iproxy",
+      "sha256": "89f298d389090d37f32a47c3f4e61cb694368376725dc000029fbaa77010e254",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/openssl",
+      "sha256": "d2b3f15c9eecb628dd123a5732493d69c07400b04d249fc6f4b677cfc491905c",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/bin/plistutil",
+      "sha256": "6e0ddf672beda89ef8ba1b359086ea1cad8dac1a64d42042fb6e9628699e0111",
+      "executable": true
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/afc.h",
+      "sha256": "742183909dcb4980fae9fd6d687c656d069999a4ccc4d943aee085515cdc010d"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/companion_proxy.h",
+      "sha256": "e3562f8152ae39e939e310de8ffa7126d98e606bd50c0918317e70479a6fa8bf"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/debugserver.h",
+      "sha256": "c999617db664fe433d8c2450c1fc76cd0c00aa471e25463be0da025db703be82"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/diagnostics_relay.h",
+      "sha256": "f94668f3071e6933845290a5ffeeb602f80799c3f991ffe5c8a9bbb2c63a19a7"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/file_relay.h",
+      "sha256": "23c09dd886a20edc636dc9e7e288445a2a7f0c2b135dac8a9429bc98ddf59112"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/heartbeat.h",
+      "sha256": "7397686b624d04365c42ec96c91d11f623a7f8ecdec144bd88d46b78ebb5984b"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/house_arrest.h",
+      "sha256": "d42c422d378e4794e2494f5c4315cebac238ba6d0424871f780f65f7533ccb6e"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/installation_proxy.h",
+      "sha256": "dd98e7869ad138ed80a39a0ecdfac714fbab074339304216911618eac96594df"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/libimobiledevice.h",
+      "sha256": "dadec1a6d94e8af0df6fcf8695f1da675f50ebf16a8bf20835cf757bc40e02cb"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/lockdown.h",
+      "sha256": "48501a8e1ce109b479669f64f7ac0955dea34703c904af0e3c1a60760de5b45c"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/misagent.h",
+      "sha256": "4545c017d3244b90ffe1b868de7accb1d5506e06da3b4fb6758441de696c6e46"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/mobile_image_mounter.h",
+      "sha256": "a574622bc87275dbd7d8363798a09086eb064f94a436e4400634735f34de5be5"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/mobileactivation.h",
+      "sha256": "c00ffd1f9c0f2ce546627a67a7b2f571dec30d0a0913f35621766b69107334da"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/mobilebackup.h",
+      "sha256": "0cbf0b5f0a73f54ab6e4f0b11c6a3c44b53cde94019ffb8ea87b73788f0803d9"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/mobilebackup2.h",
+      "sha256": "a1e0e685738b4412bdd644a9474c801b82185951b1212083aa9bf75457ea2845"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/mobilesync.h",
+      "sha256": "f61032e2fc912fec8a4cf6cae61554eb80131d57750206ce7cf508e61987a7ea"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/notification_proxy.h",
+      "sha256": "25799fc204ad82697dfb82173ee1a17d1dd501e0d8615b161bdf6792725abd71"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/preboard.h",
+      "sha256": "d938cc8f84d2468e3fcbe4caaff36328c22debf59682e2bd671fab4b4f1f5afe"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/property_list_service.h",
+      "sha256": "55e6f14a8dd87460a5b5ed2bb9e004ed13278921f36819a8204a434b7363cfe0"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/restore.h",
+      "sha256": "42d652f3ab496f36ba0d3afb3a922d01c61ba717a2eed67e07cb3f027d23b9d2"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/sbservices.h",
+      "sha256": "820dd0467a677dafb58f9e20de57bbc9d7660bb56713e795cf403534c2c3108a"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/screenshotr.h",
+      "sha256": "0bc8ab7bc6d8d43e39a241967a63560ecdbbfac984fb19fd4b64911a0dbbef1d"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/service.h",
+      "sha256": "66e268783c05b284c568a23031ee9f1da72fc988a63382b34b665f56c6d27845"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/syslog_relay.h",
+      "sha256": "6763402c4e303671c8b06950abbe022fa525cc63042426d4be6de8353ef6be18"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice/webinspector.h",
+      "sha256": "96f375d959120aa3012ac7e9bee7de091fb9b05d3c1585de27b4f6f4a552acff"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice-glue/cbuf.h",
+      "sha256": "b1d85b82e74f0fc5d9d76f6d23578a0bd1971eb2788d128af7e417c23b7b4658"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice-glue/collection.h",
+      "sha256": "77606f283e401a1d49b59920348a39bef5f2c59118566c1bcf18619123bfd975"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice-glue/glue.h",
+      "sha256": "0234280407876a2faa280f83e32ed84b38d51fffc715a21d2f0b818c9c228f37"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice-glue/nskeyedarchive.h",
+      "sha256": "e0092963a5ad1b19f3a5f511478efe224e80c005c370238f3697415be9f71483"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice-glue/opack.h",
+      "sha256": "5c6b24210f01a187f21c275ce14a7591247d86a33245109a3ff4fdd9c5efbe0e"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice-glue/socket.h",
+      "sha256": "61890ad191c54dc9116f9b4aae393e4119070dac6117693014d24e5532cadcd2"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice-glue/termcolors.h",
+      "sha256": "0c844754ed50049e57bc48ac526d458d26ed41a2651c8f4646e49b9a3befa88f"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice-glue/thread.h",
+      "sha256": "e43843d0cf76a78ca2752b229f05ffd2912b1435f4d230e81eaf7253b6634512"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice-glue/tlv.h",
+      "sha256": "7f3fb04ad273ad6465c3772125a6be81128f23ea8dc0ed65432b5f6a5db8e16c"
+    },
+    {
+      "path": "build/ios/amd64/include/libimobiledevice-glue/utils.h",
+      "sha256": "4439066f5a455a7c90c6391f4cd3965ff610095f4614e40902bb2568143105d1"
+    },
+    {
+      "path": "build/ios/amd64/include/libtasn1.h",
+      "sha256": "8493490c766056959470f54241fae531d68f390eafc2316f33a2117a05a24c82"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/aes.h",
+      "sha256": "27aaa89367b022b12b66cf52c3c2d68f6761965ac36f3f1153202fa44692ad0e"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/asn1.h",
+      "sha256": "61ac1cb5f66cfcb690fe199d25f0d13d217deff7d25ee310a42469e482c64573"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/asn1_mac.h",
+      "sha256": "5a0d1d59316bc398bc63af0f1dcf377fb66c3e3132d4c45400c9dbc2003e24b5"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/asn1err.h",
+      "sha256": "75c4b045fef75587c0df5c658b7466b74ad42755368a56cf6ff43581aa5768c6"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/asn1t.h",
+      "sha256": "a3c3f5b114cb48eee9fc7a4cabec55c895de8edc592753a46c40c650a90200cb"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/async.h",
+      "sha256": "f0112bd2d6f7ef9d2192f614c7d43bf6a0b3cc8be8f3116ba539b7a6579698a7"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/asyncerr.h",
+      "sha256": "154f003cfbf49040a04d9aac459cf5009a5a1d76298b222d66ba5b5a4e3721af"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/bio.h",
+      "sha256": "ebf8e2c6855a8adf7483f3f251cec7d4064b801883bba40b68569e2d301402a9"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/bioerr.h",
+      "sha256": "fab33e1a3a6d998634e31e86556c7badfae58876c753d10c841e3506edb9bb3e"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/blowfish.h",
+      "sha256": "fb4b19b7730d1cc7ff2b9da1435a506ad0ef50263bd168c5ff24214a06580282"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/bn.h",
+      "sha256": "ee24f408eb0e8cdf72e94d6d7fd4a411d3e12824592e493b72764957cf75a58b"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/bnerr.h",
+      "sha256": "f0dfac26985a7ae40174e90173df9f95b15bba4d3768290746d7258ff1b0ae64"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/buffer.h",
+      "sha256": "c87b52702746e224e6242f4a2a2070b007502ea92063b41df2c4f6bec11c37ca"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/buffererr.h",
+      "sha256": "73f33a7b4406477a0eaf9d0ec42f43b2594167b1d6b84175f378cf5b0de07c12"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/camellia.h",
+      "sha256": "d1cee6e44668fba0e46c38db7394aa094c6cd2a25b97dbcfcc6f0ff4414f8ebf"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/cast.h",
+      "sha256": "654ac650ae74ca5e9a87ab46c1205157a7489097d005fdccc4c52912cfcefa55"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/cmac.h",
+      "sha256": "b26f8ddb9f60eef2601a84a5455c11060e028d8ce700cae682c4a02ffe2f2ca2"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/cmp.h",
+      "sha256": "3913a6183bdb6e74864e040f31cd64021a33d11ccab54bb9dcd90ae2ff75017e"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/cmp_util.h",
+      "sha256": "7a982bac5840812b486176102b1fe8b48dda8cce0fe94f2d35aff5057a99004e"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/cmperr.h",
+      "sha256": "57b9268db3b39211fa5bce88dc6bf217ab731649bb1f63dd696ea7aac19a96a8"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/cms.h",
+      "sha256": "1c61054a540dab93ad9558ed059f8e6e245f214a712d0fc7902d886451a57f0c"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/cmserr.h",
+      "sha256": "248ec0b45cd8488035dfa40f3696966a3fea3b8e38ffee55b94b8a1e4d58053d"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/comp.h",
+      "sha256": "7054fc9fdb7ce08bddd07658d3a326f801e313e860459cba016b18f66d3d3fb7"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/comperr.h",
+      "sha256": "851f81212d489813f368757bc9511ccfa76b9cb66024607f3f0d4846a42eb085"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/conf.h",
+      "sha256": "699f81fee3556d8ab1fb6aac536f5c0687965cee986952d55b4fc7e57c5b44e8"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/conf_api.h",
+      "sha256": "a66bcc69464235679980efc4a687a4fe036388da91173809ca45c0a3cfe47a5b"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/conferr.h",
+      "sha256": "ee8aaa36553894d836b728ce9a52234d22b5d812bbbb75fa09645e7b1011346a"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/configuration.h",
+      "sha256": "1e4fdefc7979431a4c841051d67d110f8bc96ca2230a7c9d8db7f9d0728b8302"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/conftypes.h",
+      "sha256": "e8f6697076d2464eaecfe2cdae8d2045388c53da2372fd52df5f6cfdc4d63375"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/core.h",
+      "sha256": "a4a8e73bd642913e2ec268d13460f7bb97aceea59152430483e013775328eb3d"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/core_dispatch.h",
+      "sha256": "12f855f630c8710f5f19341e0b4630372f46ac63c54cd6340968903adf556b92"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/core_names.h",
+      "sha256": "1c42efab4ebe1b8d9dda76a02c6066a67da894f88b385bf98a653afa46c3a2d6"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/core_object.h",
+      "sha256": "7a7172d30597e3a3e06c4e67a049d1335aa6f7d5b49641abba8fd4d5a1c07563"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/crmf.h",
+      "sha256": "e9f9576c0f4136ffca3dfc1e448b0745fa9eaa4ad0217061d7788c37a883cdbd"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/crmferr.h",
+      "sha256": "c08a40103c0c6d0d7d9ad0e2781db1f19829d29193d115d38b4d0271d13fecf9"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/crypto.h",
+      "sha256": "6ad337ce810b4c94f3ef0a1c0c0d1889a3b73e67d8a3dbcf4f8f96feec4c7622"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/cryptoerr.h",
+      "sha256": "2035467a49cd64e952be41ce9a8754652acf31e481f2d710e14a0a4fc870cd4f"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/cryptoerr_legacy.h",
+      "sha256": "870042252331e89723d31079469104cafd676f0fedcbe0d99f56f3e8862fff8d"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ct.h",
+      "sha256": "fbba6b170db9bab806ee2427516237a8dc8328c22277ecbd7456afc52a1ba403"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/cterr.h",
+      "sha256": "562bfe4ac984ebfef4fb91bdbe0a649d157f5057ab61ffee3a844d23f7c72c0a"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/decoder.h",
+      "sha256": "8419fd9e4e333fd477238bbad4ff875d5657b02cc39635c3a5c15f3a5bc7f0f2"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/decodererr.h",
+      "sha256": "a785fb95930e8b4a18054f77b7d5143d44673f4ca57682899bc2bf3464cafccf"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/des.h",
+      "sha256": "bb13c7c5e13f3402d674fa88994b92ed72d6cdc1116707765d28bd7e0de31285"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/dh.h",
+      "sha256": "731a77b034eeacbb4fa5bcb6b67e413307a66451a9e2956cd5036a9087cb9d44"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/dherr.h",
+      "sha256": "9a9878ebd561a4fb1d38c8157d511f5de0893ac7b928f33b5cc52450bcc41a9d"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/dsa.h",
+      "sha256": "3e9b65a16899dd737b4c8fa99bd94f0cf94dcfb6ebea4a24e7b21fc92e409e46"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/dsaerr.h",
+      "sha256": "69c2ecff5f62898461bc521ea918abd2a673206dd5e8d43288ad25d2c012f163"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/dtls1.h",
+      "sha256": "1d1f404032a9eb31408c1f10bdff554d5740fb345b64b86fb74da8df95fbd901"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/e_os2.h",
+      "sha256": "41b036905ed3ab786e28ea619d353e18b5218ff98ab0cf79a6cfe7980842452e"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/e_ostime.h",
+      "sha256": "587a7593925c8d5b2f0dc3060904e3a4a7472be0ebc7dbfe2f6af6e40eb8bcc7"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ebcdic.h",
+      "sha256": "75a668c25c97853d5ba37ebce060a15152573242e3729d42830eba1daa642404"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ec.h",
+      "sha256": "0b028cf04ba8769a693f022725c91ef902a9e31f12a950180d1b4e8fa6952ff2"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ecdh.h",
+      "sha256": "5b99fdd1dfea38640ed8a506fb9b66db381cc26a1254448a81cc6b161e41850f"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ecdsa.h",
+      "sha256": "5b99fdd1dfea38640ed8a506fb9b66db381cc26a1254448a81cc6b161e41850f"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ecerr.h",
+      "sha256": "ce4fec7ee41de25a20abb7a9f00fe93305793a7bd2023d434b9aa6f64f91058a"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/encoder.h",
+      "sha256": "907d2f061c2972447d3f0c1cfc149c78791b1e4bdc131ad5a3eed1d084c76b41"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/encodererr.h",
+      "sha256": "63504766e9fcf36fe1527d95fe21460574896da187c60707bfa68254a35693b7"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/engine.h",
+      "sha256": "b48e5406717b26f41085dad8cc553e78c6cc54ea936df8ff1aa1312f32a6c053"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/engineerr.h",
+      "sha256": "8616a93b1b1bd8d1221844834817c28b7da78be1649a5b1780d9ea65fba8807c"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/err.h",
+      "sha256": "a19ec333cd352692990d7a6d1ba8918199ce2550012f300e7f6dcffa2e0992ee"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ess.h",
+      "sha256": "9da64664080d13f1f541f425dbac6305159d6c47309121427d77c67744c88de0"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/esserr.h",
+      "sha256": "e791193e891b0784670d5410539aeea9d2a8591de71495b4add6e7dbf9dc22cd"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/evp.h",
+      "sha256": "e7a29e795a165d60a4554bfa191e84e7210783b0d18325e4bb6970a2bbb9f75b"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/evperr.h",
+      "sha256": "3e11a8b5fa924cdcc314feb15fd874a7143453ad1bc3638b3fa6a38024dc6890"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/fips_names.h",
+      "sha256": "19e32043a3093329cca882db5348c7cfc9d3f7901d8294bf20e380763bd5d594"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/fipskey.h",
+      "sha256": "056f3c751af11919d3b7c87c33d5f014453a65bf82e95a7e2355149d5a718d3d"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/hmac.h",
+      "sha256": "e49fbe0086f8fbefa5648eef70bc84e8090a9226a1e3c6e856499373004aed0a"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/hpke.h",
+      "sha256": "a493c6bb10cd5155db251ee3c90996caf3374f16014b792c5a573ea5886bbcd1"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/http.h",
+      "sha256": "e370126879b70b15525bd313d93e6ee2df59f3ff66889befcf890507449d5bb1"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/httperr.h",
+      "sha256": "b50562e98d92c08e47e2b1b0bcf5652820b2a774652968a1188f9f2d87f2fe87"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/idea.h",
+      "sha256": "239122df15e738d7552dd76850c55a9ffe0136f33506c23d9058215a1255af66"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/kdf.h",
+      "sha256": "41756fe038443d1d270458d53d6e42ea78d12d980728b6a9284fa259958ea00a"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/kdferr.h",
+      "sha256": "3d9f27fffdb49e0ece9d5a62adbb9cc42c56262b00cc8ce7f956b2cb05a2a22d"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/lhash.h",
+      "sha256": "3608b3ed1845c776a719d3b6684ec6069f835a857e75bd33e1702de0d6ab0d54"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/macros.h",
+      "sha256": "3071da3bdac478c6f5f67976e95b0259785bc2ba4d27aeab7b905ce9882347d6"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/md2.h",
+      "sha256": "4add77ed047736979dc442a49d42921cce21e654a2dceef058d0191aa2d3c941"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/md4.h",
+      "sha256": "0472e597d139b44dd7d78d9093a5d8109417d18e9955fc940f1ea3e2e892ab44"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/md5.h",
+      "sha256": "308c901ec1a28f9b0098717f689ca63e104ce805050802d38b8f122d85ab2c78"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/mdc2.h",
+      "sha256": "42b844c9ae9e00e7c0b0e28858b8b3db7b8abf7e514e5e63f43456371ed3384b"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/modes.h",
+      "sha256": "4a8b3b1dafc15798a3b2bef0e3885275746e7fae73a0d96e55da55261554ba52"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/obj_mac.h",
+      "sha256": "c1a58899532495f99fd3c416d71819179663a66fbe272f64bb90ab057fa0e550"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/objects.h",
+      "sha256": "5fc6f3f0dd5e46fd409cb51ae1b331fec799fb6ef4b5efdc8ffbe264e5e83997"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/objectserr.h",
+      "sha256": "e17a8d7f62a1ef257fd90e604d4293bf02d5f81ae8198efe1e197c5b27baeb8c"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ocsp.h",
+      "sha256": "0e229d683a7e716a3834157218f692f0db7996f4b473da08c57ffdffbd661eb3"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ocsperr.h",
+      "sha256": "178329cfc042d3f1eb6e179206d844de41ba05ee4ac0ed9e3e6c861fb49d68ea"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/opensslconf.h",
+      "sha256": "890184233890bacd52fd420fef07befad411b9a318b97efbf36f46673d3e7841"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/opensslv.h",
+      "sha256": "395e27ea185fd9b03bb5cb859103907d099aac137962ba8da7599080abdd4fec"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ossl_typ.h",
+      "sha256": "76cb203ef3bcd305f4171e1d33f3f3319dee6354c2433493e5e9068aa79672fd"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/param_build.h",
+      "sha256": "3bf39b1037256466f1a89868621b2b62f1d05e63064159e60727041b170d55e3"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/params.h",
+      "sha256": "10d8e0157e339ee01f3b9c60c4b5bc60e6d4edce1084f0c9589ff75bf3a9f693"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/pem.h",
+      "sha256": "3c272adab77a71498899d9cd7c4c1b595ff4fe6d51b3d051907c4fd39816ef57"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/pem2.h",
+      "sha256": "a34a1607983b5f32be8ca49e75c3b41f1c9413b4eb777af144958283ecbd3922"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/pemerr.h",
+      "sha256": "843df90b1b434eed626bb6b8bccd5f6ed530e592d706584f56a725d254d8a5d2"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/pkcs12.h",
+      "sha256": "a6d90fb94cf452bc425cb499ef305854b2f99f2cb70f67b08ba28f960c79f4e9"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/pkcs12err.h",
+      "sha256": "fa281e5b93652e6c2c31393f62539d5252c125a4b1c4214f21fa321bd033da10"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/pkcs7.h",
+      "sha256": "e8834a010b0486ef7ed556ac0887261cb9f81892f5da5fd25243e361e235c982"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/pkcs7err.h",
+      "sha256": "9fe7a51f3de13b1fd03b319c64b8bd287164eb6ce7d3481994141c0be51396d5"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/prov_ssl.h",
+      "sha256": "31ded7f804f341c01c2f305187d1cf76daebe4426a1c6b4d2abc2b12d6e2d090"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/proverr.h",
+      "sha256": "51498c8317f8102afd8d7a15d0d2d19a62fb2ce55a66b4537aa6c9953a1912e4"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/provider.h",
+      "sha256": "1447ea059af6d57fe7101909f551667ffef85d43ebac74b668ff39ce7de7a13c"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/quic.h",
+      "sha256": "99c1fdf50129039b16af5b60ffb69638b7df4bc1c8b045299d7e480d4de90208"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/rand.h",
+      "sha256": "3ac0539d994400546be2710e3be80b4b8ea28772c06d549d514fc305e0aa077b"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/randerr.h",
+      "sha256": "455f8ca7562cbb97dc3d7f8ce2ce27a404ac2ae3a6d7219d45c48c54bc80f910"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/rc2.h",
+      "sha256": "08c6865d169a300e8bc818bd810f80ffb8a21d69e97dad88e400b586d0f3e965"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/rc4.h",
+      "sha256": "ea45836c253246c1d6f1b16b360dbb59322e26e28bfc54881d698e7cd5057666"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/rc5.h",
+      "sha256": "968c96ead08204edb8148981094700cbc3338ed0613c4469da5ab4675fa1ce29"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ripemd.h",
+      "sha256": "2e28edeb6613516db89e28c9d962301f4fe7b38366ebdd1d35933f3491d57b9d"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/rsa.h",
+      "sha256": "c30eeea9aef005afac36c1ec5565d4069194c088cb7a22930d7ba0ed814d7402"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/rsaerr.h",
+      "sha256": "a745e6b2835af7bb933e78870a270d51ab33778fe10a5cd377422d4b9587dcf0"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/safestack.h",
+      "sha256": "19ee08576dd9663c91a68ead50a8de4da6c6eb80bc67526b59015c766ddfec33"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/seed.h",
+      "sha256": "0d6d206f240f7bd6fa28cd4ec66b2b878f199af3ce6eda172af9fe31ebb71586"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/self_test.h",
+      "sha256": "780a17cecfd4f821d1293ababb5f560a111c67d32eace330d22ce40f03fee84d"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/sha.h",
+      "sha256": "553407b2787ef08f69396973063de06340097cb7e4c1569265a533b3567e1856"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/srp.h",
+      "sha256": "7f8fe9346e7b96fffab973029ebc955c6bb89e7556391281b0dd49205d49e33c"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/srtp.h",
+      "sha256": "20ddd75f9579087b24339e12c14b11939bca462e3cbc2e4b1867773407d6162a"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ssl.h",
+      "sha256": "5d2f8f10d12dd9a7fdf5e4188def6dfcec87c18870c8625dbbb857d3dd1590cd"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ssl2.h",
+      "sha256": "92e3330e2867bf17d3b305ba0f6fe6b073ad4bdb9db519e4224bbd993f1e9cb7"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ssl3.h",
+      "sha256": "f901dfcb95371c404b9e8b67d36ef2413a915447bd306e0f96237c97867a6146"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/sslerr.h",
+      "sha256": "1ffb3c381842fc1535ac05df29759177a8221cc8be95e2848bafa09fd0c33bc8"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/sslerr_legacy.h",
+      "sha256": "98401ca29f46694fff11304801d995015a7e4a81afe0db0a9a79a0bdde9e03d8"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/stack.h",
+      "sha256": "69f94382a15a3c4cfd1dda32108db5234727b36ed0e25f1fb12e0993c7b5ac95"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/store.h",
+      "sha256": "233e1f210c4757fc5e221a0727c938429078bc04e22376528b0fcf3f7307ac9b"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/storeerr.h",
+      "sha256": "370277e107a1b979ff5e0bd28f5adb92e066d41831ac37ce7108d2a1b84376f6"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/symhacks.h",
+      "sha256": "68b54776fa15943f3f018be6c7dc7a8847c9f512fb5eeec4f093804197dc2dfa"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/thread.h",
+      "sha256": "9390db912ff47887ff9cfba47b982379dc4a965fb2d085a2f34dc27141c07406"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/tls1.h",
+      "sha256": "01fe7c52e0093ad010e73fcf287f9729284c9b0ef5cda9766acc4c56bf24f3e6"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/trace.h",
+      "sha256": "f49ed49126448972dc92b38aa6a224d9bd8a738ef6b037116f5e0a7f8065a9db"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ts.h",
+      "sha256": "bc0c028affba178820caacf5f0b1ec085f12e644d77d2edf44184f8032103e98"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/tserr.h",
+      "sha256": "0d851cb9db84c48bb8a9871a988950fd0b62ecc854b11641e3e9a07fa191a6f6"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/txt_db.h",
+      "sha256": "1a6a6b331ef3cc6c632f782e8da2fa81aaeeac56e4d0b2fb3016f936805be257"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/types.h",
+      "sha256": "fd9a49f963f599a34792a56eea344ceb35b6958c9675169012cc3f6a484c2c11"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/ui.h",
+      "sha256": "71663d97e048fd14e4652af8402acb72200784b1940bd70b39b442c6d5c99bd9"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/uierr.h",
+      "sha256": "6f46dc9509b4d10802aaa1ad3c84763a2843312fdc8dd8add5c7b24e7f0c877f"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/whrlpool.h",
+      "sha256": "bb8f9f6ad1960e87f78363793130a0c1bee89b64a12eb32e939791fb0ca61016"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/x509.h",
+      "sha256": "b9a66dfa61aa1896846851873d486fe8f53faf55acd097114b938268363acb5c"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/x509_vfy.h",
+      "sha256": "366991bebf9416ac8c4f4bd703a670d6e106c178d7974fcc490a4d3d7bd0f134"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/x509err.h",
+      "sha256": "2f499bb7bbe947d9ed700d26debfad274c0233462d1dcf4504a8f339c11dbdb4"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/x509v3.h",
+      "sha256": "9420073e85e6b95877678f42eb7df49dcde26759d7a7c01716c5a68148584792"
+    },
+    {
+      "path": "build/ios/amd64/include/openssl/x509v3err.h",
+      "sha256": "294e1a37440b7d5fa1b780c385353f3e9aeb5eddcb6cca73d44bf4186698ee57"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/Array.h",
+      "sha256": "472fb77fa5c3490ffd54c216eb5c7acdfcdd2d55f5fe552cb92ccbade6174ba5"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/Boolean.h",
+      "sha256": "37a6e5ddec0d78b7d083544462d2948a7dfca1532cbde0c01169a017ddaff930"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/Data.h",
+      "sha256": "f55f51056a6dafd2b3c8b3e8c52602c4321ea39768f5f0c9ea64e21b3fa04633"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/Date.h",
+      "sha256": "1b2f341bb05d74c27d5138a6a9cae6a66586c26020b2f420d091c06c17943f97"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/Dictionary.h",
+      "sha256": "9252b4b1f90db1fdf08146b35d3d6018943df135640d28835a283f418904978a"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/Integer.h",
+      "sha256": "2229d832e8b5f5cbcbd43ac6649b7e50acf0f21020a2476efe72fe4e67321f13"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/Key.h",
+      "sha256": "806b610963c5aa729271c1e6750e30b1efcc5267c4e768599f8379c2dfed454c"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/Node.h",
+      "sha256": "c38bc3dcae889534b0d214b093ff6cc56805f25ea24979289774beaf9d725a91"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/Real.h",
+      "sha256": "4e05071c92650d0cf524ece765599a479b1d544b9219020b5227eb0e8ef53b9e"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/String.h",
+      "sha256": "d17ecb69c5cb5c2cd0ee92a009a8ff366fbceabcf6a927f98240eb7d8f2844dc"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/Structure.h",
+      "sha256": "2794d7f292b537deaaaacd0717e121f2cc242a50dce93596a90d781dfc2bed11"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/Uid.h",
+      "sha256": "c101bd72df5f13887965063212ec18e317383de37666766444c63dadf8df02e3"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/plist++.h",
+      "sha256": "73cf4f7ff61d8bac3f42e24e6871ba805d284aac3e3664f469c6770e2a200d9b"
+    },
+    {
+      "path": "build/ios/amd64/include/plist/plist.h",
+      "sha256": "04b27f5f75aae4ab1d2976e00189e52dc71d3bea53d44c13b750a9b5fcffb832"
+    },
+    {
+      "path": "build/ios/amd64/include/usbmuxd-proto.h",
+      "sha256": "cf73bdde39d2d87e18f266e48e1865642b3dc9a0e226461e1474c7ccc2eb0871"
+    },
+    {
+      "path": "build/ios/amd64/include/usbmuxd.h",
+      "sha256": "31d2924dde2069a6f3807d9f9bb88a0e18829b3b219c7b2826a73ef49e5670ce"
+    },
+    {
+      "path": "build/ios/amd64/lib/engines-3/capi.dylib",
+      "sha256": "229d9791bddf0fd7308702f20abd25b0bd8d9e5588cfae93f6fc43d3da396a2c"
+    },
+    {
+      "path": "build/ios/amd64/lib/engines-3/loader_attic.dylib",
+      "sha256": "a63b7c971c2f407cf706e73668ffc9de333e28cd19f033225676b92cb4445c00"
+    },
+    {
+      "path": "build/ios/amd64/lib/engines-3/padlock.dylib",
+      "sha256": "eef3eef9a96a0b4977d884a998416e2804f1270c490e8992278fe74a19f5a541"
+    },
+    {
+      "path": "build/ios/amd64/lib/libcrypto.3.dylib",
+      "sha256": "f7deaecb22c61f4984b1d27e7fd6dd3f1cb1ae43d46dc147f696f5b3468967b0"
+    },
+    {
+      "path": "build/ios/amd64/lib/libcrypto.a",
+      "sha256": "8f961499f8c8cd054b92b9336abccb368f74e5912501d9529f7b60782875a2c6"
+    },
+    {
+      "path": "build/ios/amd64/lib/libimobiledevice-1.0.6.dylib",
+      "sha256": "3bfb6ca64c2dcb3d260c69dfc6f61e66485d1e524cb93a6ea733c69d5a6e7ca3"
+    },
+    {
+      "path": "build/ios/amd64/lib/libimobiledevice-1.0.a",
+      "sha256": "81a088ed996c2a4811c3b9479988a05fc47003174efc1f78367ab64c3ea71694"
+    },
+    {
+      "path": "build/ios/amd64/lib/libimobiledevice-glue-1.0.0.dylib",
+      "sha256": "9e39faebb0fbe97f1e56f4ffeeb57a2b42041578d612c07baf0baff4e8f8e384"
+    },
+    {
+      "path": "build/ios/amd64/lib/libimobiledevice-glue-1.0.a",
+      "sha256": "cc8ab5189a98a622028a31e93b7a090f0ce71796ef9812fee207cdb10c84ccc8"
+    },
+    {
+      "path": "build/ios/amd64/lib/libplist++-2.0.4.dylib",
+      "sha256": "88acfc03fe2b14426f63c54c277465b9af47defd0d5c62733f27089a787131ca"
+    },
+    {
+      "path": "build/ios/amd64/lib/libplist++-2.0.a",
+      "sha256": "ccd51fefd9e5575812dd1a50427d9b26d2aecd993c09ff0e6f9fbd0aa7ab1b2d"
+    },
+    {
+      "path": "build/ios/amd64/lib/libplist-2.0.4.dylib",
+      "sha256": "ed892061b836cbbaf9a049c31eef420e33bae308621145314dc50f1e0c9d18d9"
+    },
+    {
+      "path": "build/ios/amd64/lib/libplist-2.0.a",
+      "sha256": "33d3ef60562fcf2947b6891ee8c29a63bad9599923c910fe843bf69476a82a60"
+    },
+    {
+      "path": "build/ios/amd64/lib/libssl.3.dylib",
+      "sha256": "15a7b24bf8304d15c61311ce559a6585a9dc4fac13b6fd3f3f76b988ef5f4a90"
+    },
+    {
+      "path": "build/ios/amd64/lib/libssl.a",
+      "sha256": "805afde796eb1e583d95a25a0421547751d5fc7af3ac47b10d088a853ec8b9c2"
+    },
+    {
+      "path": "build/ios/amd64/lib/libtasn1.6.dylib",
+      "sha256": "88cc0547b1d30b83ba184d25a16a7a232bd330fbb39aa92a1a89408c14eacf5c"
+    },
+    {
+      "path": "build/ios/amd64/lib/libtasn1.a",
+      "sha256": "f884af62b580e1d3b93dff7ccbf711c03b60baa7d4e104d4196cd63e5c60b2ac"
+    },
+    {
+      "path": "build/ios/amd64/lib/libusbmuxd-2.0.7.dylib",
+      "sha256": "306c8a0728c2a78e7a3a2f08e443d03c5c564df1e961728be0b301c1a136b68b"
+    },
+    {
+      "path": "build/ios/amd64/lib/libusbmuxd-2.0.a",
+      "sha256": "d08f52438f0def4931dbcb02a3d0fb33551f2c77bdbf3a1eacf4706d282bd74c"
+    },
+    {
+      "path": "build/ios/amd64/lib/ossl-modules/legacy.dylib",
+      "sha256": "79110cb01e98085bce42be1783091885391e9dc805ac388a17a2fe0c97ef3192"
+    },
+    {
+      "path": "build/ios/amd64/lib/pkgconfig/libcrypto.pc",
+      "sha256": "3699b2b9b6f52921d6b0cde0be21636542cecc36597962b9f6fca03465164c88"
+    },
+    {
+      "path": "build/ios/amd64/lib/pkgconfig/libimobiledevice-1.0.pc",
+      "sha256": "7d111d7c4f487317fe0dab8ad890071ca6d61c9fa3cacb7ae7299b1add320482"
+    },
+    {
+      "path": "build/ios/amd64/lib/pkgconfig/libimobiledevice-glue-1.0.pc",
+      "sha256": "77cb32b16433ce051e8810a419297d56e153a96caceffabf205cb22a3f52cbf9"
+    },
+    {
+      "path": "build/ios/amd64/lib/pkgconfig/libplist++-2.0.pc",
+      "sha256": "792a18e405f638000129ad6c5cb369e61852ad94f7d6f046c29239dabf1dfee5"
+    },
+    {
+      "path": "build/ios/amd64/lib/pkgconfig/libplist-2.0.pc",
+      "sha256": "f6f745d7c077060c7d3a167b47dd6e20c0900d9801a95e7d46e135330564d9ff"
+    },
+    {
+      "path": "build/ios/amd64/lib/pkgconfig/libssl.pc",
+      "sha256": "176ae56cde9c8b65e26a74f97f94cb65af1a3d98f0fb5942c4edae2b277aa56f"
+    },
+    {
+      "path": "build/ios/amd64/lib/pkgconfig/libtasn1.pc",
+      "sha256": "30ca89727cbe00bfc712d1de9678306f50cb0354c7f99fdda9b77d987c7aad19"
+    },
+    {
+      "path": "build/ios/amd64/lib/pkgconfig/libusbmuxd-2.0.pc",
+      "sha256": "a7463e8186dcc188ea61f252cef8ecdb2daf591ee9df4ebf204e444de4fd1524"
+    },
+    {
+      "path": "build/ios/amd64/lib/pkgconfig/openssl.pc",
+      "sha256": "bd13536f54752919feb1f71673624e56e615eb78a8f717e4af8fff5d349e84ac"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libimobiledevice/AUTHORS",
+      "sha256": "4920ad8427644a779b6d12a51121d69cdb609f26fdfff322c22efa5de7ffb584"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libimobiledevice/COPYING",
+      "sha256": "7619c753cac95d4740220223bde48a032606fcaccde5e546f9bc444c81ab356d"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libimobiledevice/COPYING.LESSER",
+      "sha256": "e237fa56668030e928551ddd60f05df5fe957f75eab874bbd017e085ed722e7c"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libimobiledevice/provenance.json",
+      "sha256": "2d265acb2d7d7ed3f3bdc3eb5b224f3a62d492b875a0f3b605918ea9de73657d"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libimobiledevice-glue/COPYING",
+      "sha256": "e237fa56668030e928551ddd60f05df5fe957f75eab874bbd017e085ed722e7c"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libimobiledevice-glue/provenance.json",
+      "sha256": "6c9b506f666465ae5931de8b61b45193c62aa725480441017f0db00a724fa48c"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libplist/AUTHORS",
+      "sha256": "9ee5828311bc47160791e9fc1574cb356d9d6a661b1d194a97cd254d58c9d3b9"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libplist/COPYING",
+      "sha256": "7619c753cac95d4740220223bde48a032606fcaccde5e546f9bc444c81ab356d"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libplist/COPYING.LESSER",
+      "sha256": "e237fa56668030e928551ddd60f05df5fe957f75eab874bbd017e085ed722e7c"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libplist/provenance.json",
+      "sha256": "ce77c65efb0730eb261e648eaf80650a870df2602885f3ecc203735f3a0f5da3"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libtasn1/AUTHORS",
+      "sha256": "fb00a53c054e6e23bfdd1481b71e40a9246095e110567483841371e05a984812"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libtasn1/COPYING",
+      "sha256": "7446831f659f7ebfd8d497acc7f05dfa8e31c6cb6ba1b45df33d4895ab80f5a6"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libtasn1/provenance.json",
+      "sha256": "b93ad5c41150567a1d08da980113b43ad0e9fdc87835468062f90f95b519a995"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libusbmuxd/AUTHORS",
+      "sha256": "f76632e73560fb36850d2d70cf72960240a82d8c527022a4165370f8a81fa9fc"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libusbmuxd/COPYING",
+      "sha256": "e237fa56668030e928551ddd60f05df5fe957f75eab874bbd017e085ed722e7c"
+    },
+    {
+      "path": "build/ios/amd64/licenses/libusbmuxd/provenance.json",
+      "sha256": "796c4fc4f5daec8b39ad658145f920da84b88624238bf1953e1d25690d487077"
+    },
+    {
+      "path": "build/ios/amd64/licenses/openssl@3/AUTHORS.md",
+      "sha256": "5076ca441daef7fb35e904c2ac070880c7b3d58300a5a6aecac41e8f525f4412"
+    },
+    {
+      "path": "build/ios/amd64/licenses/openssl@3/LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "build/ios/amd64/licenses/openssl@3/provenance.json",
+      "sha256": "e74cf11577ea0de64ac94910e45083760036a12d6f4fe7fe5b9110ac32b8b5f3"
+    },
+    {
+      "path": "build/ios/arm64/bin/asn1Coding",
+      "sha256": "890e2159605df75cabe479e0fe5ff270999e8aa0b712887aafcb48e83e152e24",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/asn1Decoding",
+      "sha256": "bceec76d8ea03c996b78183e63a5bc6de6989624ffecbbfab3e499b71b654b95",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/asn1Parser",
+      "sha256": "6b95df4794b93f7cf7752375dc5264bd5bca8d2fbb50463ddc7cc4470444fa70",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/c_rehash",
+      "sha256": "81e9f0c950f9341cb46f618eb6f8622328c2ad28dad07b8d253a335d614b3c4b",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevice_id",
+      "sha256": "c0026fd6822b43e09d1dfb49e81dfd62e4c56e3cb0fa7702c0daeb5ae3d6747f",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevicebackup",
+      "sha256": "a854a49a5ad6b62a2993b203e96516f553abbe6f0bcdc5e57fd950925b9d3e84",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevicebackup2",
+      "sha256": "28e8775d4311ad2b4c81bbc2a3dd1934abd0d9294300e791ec94ca0120ae7dd4",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevicecrashreport",
+      "sha256": "e919b3446eb5d918e5cb0a6e9144f2b048579baaff83e3b972b066c4fda73b47",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevicedate",
+      "sha256": "c3a878bd9a4062739e7db5074ef9ed92bec52d92e7eb2a7cce1265a87d79a6dc",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevicedebug",
+      "sha256": "9d5e42e0f89ccd90f5b4a69c9830bee090de645c7178189c1c26243263ec7709",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevicedebugserverproxy",
+      "sha256": "ffa7f0858b3c68dc42e6e104d9d6c74ac35c519b54cf5fd5e79aa94684b58ad4",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevicediagnostics",
+      "sha256": "b42c6a7a1e7822b9496fe7027770d412ccb236e783455fb3396c04d14fd8522c",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/ideviceenterrecovery",
+      "sha256": "5bd7169aec5c649771d7eb373722a1c39a12e9f04459d20566b2c4ee4ae0a03d",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/ideviceimagemounter",
+      "sha256": "5d7ab2acb3cfba43ef4b1837a4d8062cac203b1f8c9a1b3b0a904eba86b8b28d",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/ideviceinfo",
+      "sha256": "ad49aec8f9d7d145ab19595ac3e2fdf668a768de6dac0e35fc79650b1ed63af1",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevicename",
+      "sha256": "5ca51be291770ac89784452de4cdeaaf1c29ccb2d02a3ac5e684b19df60d10ac",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevicenotificationproxy",
+      "sha256": "e25902e3621489acf15147e25537b8a3058139b8325741a652ea145ff3279461",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevicepair",
+      "sha256": "d42b0b4a6cc7bef57744ceb9d2b084b1ab5c5932555e620a6dbcdfe5a481851f",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/ideviceprovision",
+      "sha256": "87d7f85b2d0cd2e4cee13489b8ea7100a06894419eb3a72d8f51f2efbd9396b5",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevicescreenshot",
+      "sha256": "66a2deb8195c591d57dd792a4033f1b439506740f597ec98801b18e6cc64fd41",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevicesetlocation",
+      "sha256": "2cd453688a1682ffa12951ac8b0c65fe01adb747e6afc94e47365fa5142f8039",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/idevicesyslog",
+      "sha256": "017fa4580fa2acf2abbf30132580c30b538451cccc9bd5ca93a9045ab5a5101f",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/inetcat",
+      "sha256": "e562d333f8ee7f10beaf8457d4ab4a98f5762ed1bef57fd85f49607b012c8c40",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/iproxy",
+      "sha256": "3ea73c32817f7cf7a5fb87ef90d403f752748f384ccbf70c887560ace10ea396",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/openssl",
+      "sha256": "1b84a2bacb80ceefbf50a68862768fc6c18c4a1980cdbb10bff946a388c5194c",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/bin/plistutil",
+      "sha256": "03331ef00926e478172927f00688241f79f77c2fe1281a013c4d5d9b206e9dda",
+      "executable": true
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/afc.h",
+      "sha256": "742183909dcb4980fae9fd6d687c656d069999a4ccc4d943aee085515cdc010d"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/companion_proxy.h",
+      "sha256": "e3562f8152ae39e939e310de8ffa7126d98e606bd50c0918317e70479a6fa8bf"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/debugserver.h",
+      "sha256": "c999617db664fe433d8c2450c1fc76cd0c00aa471e25463be0da025db703be82"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/diagnostics_relay.h",
+      "sha256": "f94668f3071e6933845290a5ffeeb602f80799c3f991ffe5c8a9bbb2c63a19a7"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/file_relay.h",
+      "sha256": "23c09dd886a20edc636dc9e7e288445a2a7f0c2b135dac8a9429bc98ddf59112"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/heartbeat.h",
+      "sha256": "7397686b624d04365c42ec96c91d11f623a7f8ecdec144bd88d46b78ebb5984b"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/house_arrest.h",
+      "sha256": "d42c422d378e4794e2494f5c4315cebac238ba6d0424871f780f65f7533ccb6e"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/installation_proxy.h",
+      "sha256": "dd98e7869ad138ed80a39a0ecdfac714fbab074339304216911618eac96594df"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/libimobiledevice.h",
+      "sha256": "dadec1a6d94e8af0df6fcf8695f1da675f50ebf16a8bf20835cf757bc40e02cb"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/lockdown.h",
+      "sha256": "48501a8e1ce109b479669f64f7ac0955dea34703c904af0e3c1a60760de5b45c"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/misagent.h",
+      "sha256": "4545c017d3244b90ffe1b868de7accb1d5506e06da3b4fb6758441de696c6e46"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/mobile_image_mounter.h",
+      "sha256": "a574622bc87275dbd7d8363798a09086eb064f94a436e4400634735f34de5be5"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/mobileactivation.h",
+      "sha256": "c00ffd1f9c0f2ce546627a67a7b2f571dec30d0a0913f35621766b69107334da"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/mobilebackup.h",
+      "sha256": "0cbf0b5f0a73f54ab6e4f0b11c6a3c44b53cde94019ffb8ea87b73788f0803d9"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/mobilebackup2.h",
+      "sha256": "a1e0e685738b4412bdd644a9474c801b82185951b1212083aa9bf75457ea2845"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/mobilesync.h",
+      "sha256": "f61032e2fc912fec8a4cf6cae61554eb80131d57750206ce7cf508e61987a7ea"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/notification_proxy.h",
+      "sha256": "25799fc204ad82697dfb82173ee1a17d1dd501e0d8615b161bdf6792725abd71"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/preboard.h",
+      "sha256": "d938cc8f84d2468e3fcbe4caaff36328c22debf59682e2bd671fab4b4f1f5afe"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/property_list_service.h",
+      "sha256": "55e6f14a8dd87460a5b5ed2bb9e004ed13278921f36819a8204a434b7363cfe0"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/restore.h",
+      "sha256": "42d652f3ab496f36ba0d3afb3a922d01c61ba717a2eed67e07cb3f027d23b9d2"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/sbservices.h",
+      "sha256": "820dd0467a677dafb58f9e20de57bbc9d7660bb56713e795cf403534c2c3108a"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/screenshotr.h",
+      "sha256": "0bc8ab7bc6d8d43e39a241967a63560ecdbbfac984fb19fd4b64911a0dbbef1d"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/service.h",
+      "sha256": "66e268783c05b284c568a23031ee9f1da72fc988a63382b34b665f56c6d27845"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/syslog_relay.h",
+      "sha256": "6763402c4e303671c8b06950abbe022fa525cc63042426d4be6de8353ef6be18"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice/webinspector.h",
+      "sha256": "96f375d959120aa3012ac7e9bee7de091fb9b05d3c1585de27b4f6f4a552acff"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice-glue/cbuf.h",
+      "sha256": "b1d85b82e74f0fc5d9d76f6d23578a0bd1971eb2788d128af7e417c23b7b4658"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice-glue/collection.h",
+      "sha256": "77606f283e401a1d49b59920348a39bef5f2c59118566c1bcf18619123bfd975"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice-glue/glue.h",
+      "sha256": "0234280407876a2faa280f83e32ed84b38d51fffc715a21d2f0b818c9c228f37"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice-glue/nskeyedarchive.h",
+      "sha256": "e0092963a5ad1b19f3a5f511478efe224e80c005c370238f3697415be9f71483"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice-glue/opack.h",
+      "sha256": "5c6b24210f01a187f21c275ce14a7591247d86a33245109a3ff4fdd9c5efbe0e"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice-glue/socket.h",
+      "sha256": "61890ad191c54dc9116f9b4aae393e4119070dac6117693014d24e5532cadcd2"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice-glue/termcolors.h",
+      "sha256": "0c844754ed50049e57bc48ac526d458d26ed41a2651c8f4646e49b9a3befa88f"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice-glue/thread.h",
+      "sha256": "e43843d0cf76a78ca2752b229f05ffd2912b1435f4d230e81eaf7253b6634512"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice-glue/tlv.h",
+      "sha256": "7f3fb04ad273ad6465c3772125a6be81128f23ea8dc0ed65432b5f6a5db8e16c"
+    },
+    {
+      "path": "build/ios/arm64/include/libimobiledevice-glue/utils.h",
+      "sha256": "4439066f5a455a7c90c6391f4cd3965ff610095f4614e40902bb2568143105d1"
+    },
+    {
+      "path": "build/ios/arm64/include/libtasn1.h",
+      "sha256": "8493490c766056959470f54241fae531d68f390eafc2316f33a2117a05a24c82"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/aes.h",
+      "sha256": "27aaa89367b022b12b66cf52c3c2d68f6761965ac36f3f1153202fa44692ad0e"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/asn1.h",
+      "sha256": "61ac1cb5f66cfcb690fe199d25f0d13d217deff7d25ee310a42469e482c64573"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/asn1_mac.h",
+      "sha256": "5a0d1d59316bc398bc63af0f1dcf377fb66c3e3132d4c45400c9dbc2003e24b5"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/asn1err.h",
+      "sha256": "75c4b045fef75587c0df5c658b7466b74ad42755368a56cf6ff43581aa5768c6"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/asn1t.h",
+      "sha256": "a3c3f5b114cb48eee9fc7a4cabec55c895de8edc592753a46c40c650a90200cb"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/async.h",
+      "sha256": "f0112bd2d6f7ef9d2192f614c7d43bf6a0b3cc8be8f3116ba539b7a6579698a7"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/asyncerr.h",
+      "sha256": "154f003cfbf49040a04d9aac459cf5009a5a1d76298b222d66ba5b5a4e3721af"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/bio.h",
+      "sha256": "ebf8e2c6855a8adf7483f3f251cec7d4064b801883bba40b68569e2d301402a9"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/bioerr.h",
+      "sha256": "fab33e1a3a6d998634e31e86556c7badfae58876c753d10c841e3506edb9bb3e"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/blowfish.h",
+      "sha256": "fb4b19b7730d1cc7ff2b9da1435a506ad0ef50263bd168c5ff24214a06580282"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/bn.h",
+      "sha256": "ee24f408eb0e8cdf72e94d6d7fd4a411d3e12824592e493b72764957cf75a58b"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/bnerr.h",
+      "sha256": "f0dfac26985a7ae40174e90173df9f95b15bba4d3768290746d7258ff1b0ae64"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/buffer.h",
+      "sha256": "c87b52702746e224e6242f4a2a2070b007502ea92063b41df2c4f6bec11c37ca"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/buffererr.h",
+      "sha256": "73f33a7b4406477a0eaf9d0ec42f43b2594167b1d6b84175f378cf5b0de07c12"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/camellia.h",
+      "sha256": "d1cee6e44668fba0e46c38db7394aa094c6cd2a25b97dbcfcc6f0ff4414f8ebf"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/cast.h",
+      "sha256": "654ac650ae74ca5e9a87ab46c1205157a7489097d005fdccc4c52912cfcefa55"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/cmac.h",
+      "sha256": "b26f8ddb9f60eef2601a84a5455c11060e028d8ce700cae682c4a02ffe2f2ca2"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/cmp.h",
+      "sha256": "3913a6183bdb6e74864e040f31cd64021a33d11ccab54bb9dcd90ae2ff75017e"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/cmp_util.h",
+      "sha256": "7a982bac5840812b486176102b1fe8b48dda8cce0fe94f2d35aff5057a99004e"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/cmperr.h",
+      "sha256": "57b9268db3b39211fa5bce88dc6bf217ab731649bb1f63dd696ea7aac19a96a8"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/cms.h",
+      "sha256": "1c61054a540dab93ad9558ed059f8e6e245f214a712d0fc7902d886451a57f0c"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/cmserr.h",
+      "sha256": "248ec0b45cd8488035dfa40f3696966a3fea3b8e38ffee55b94b8a1e4d58053d"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/comp.h",
+      "sha256": "7054fc9fdb7ce08bddd07658d3a326f801e313e860459cba016b18f66d3d3fb7"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/comperr.h",
+      "sha256": "851f81212d489813f368757bc9511ccfa76b9cb66024607f3f0d4846a42eb085"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/conf.h",
+      "sha256": "699f81fee3556d8ab1fb6aac536f5c0687965cee986952d55b4fc7e57c5b44e8"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/conf_api.h",
+      "sha256": "a66bcc69464235679980efc4a687a4fe036388da91173809ca45c0a3cfe47a5b"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/conferr.h",
+      "sha256": "ee8aaa36553894d836b728ce9a52234d22b5d812bbbb75fa09645e7b1011346a"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/configuration.h",
+      "sha256": "1e4fdefc7979431a4c841051d67d110f8bc96ca2230a7c9d8db7f9d0728b8302"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/conftypes.h",
+      "sha256": "e8f6697076d2464eaecfe2cdae8d2045388c53da2372fd52df5f6cfdc4d63375"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/core.h",
+      "sha256": "a4a8e73bd642913e2ec268d13460f7bb97aceea59152430483e013775328eb3d"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/core_dispatch.h",
+      "sha256": "12f855f630c8710f5f19341e0b4630372f46ac63c54cd6340968903adf556b92"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/core_names.h",
+      "sha256": "1c42efab4ebe1b8d9dda76a02c6066a67da894f88b385bf98a653afa46c3a2d6"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/core_object.h",
+      "sha256": "7a7172d30597e3a3e06c4e67a049d1335aa6f7d5b49641abba8fd4d5a1c07563"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/crmf.h",
+      "sha256": "e9f9576c0f4136ffca3dfc1e448b0745fa9eaa4ad0217061d7788c37a883cdbd"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/crmferr.h",
+      "sha256": "c08a40103c0c6d0d7d9ad0e2781db1f19829d29193d115d38b4d0271d13fecf9"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/crypto.h",
+      "sha256": "6ad337ce810b4c94f3ef0a1c0c0d1889a3b73e67d8a3dbcf4f8f96feec4c7622"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/cryptoerr.h",
+      "sha256": "2035467a49cd64e952be41ce9a8754652acf31e481f2d710e14a0a4fc870cd4f"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/cryptoerr_legacy.h",
+      "sha256": "870042252331e89723d31079469104cafd676f0fedcbe0d99f56f3e8862fff8d"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ct.h",
+      "sha256": "fbba6b170db9bab806ee2427516237a8dc8328c22277ecbd7456afc52a1ba403"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/cterr.h",
+      "sha256": "562bfe4ac984ebfef4fb91bdbe0a649d157f5057ab61ffee3a844d23f7c72c0a"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/decoder.h",
+      "sha256": "8419fd9e4e333fd477238bbad4ff875d5657b02cc39635c3a5c15f3a5bc7f0f2"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/decodererr.h",
+      "sha256": "a785fb95930e8b4a18054f77b7d5143d44673f4ca57682899bc2bf3464cafccf"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/des.h",
+      "sha256": "bb13c7c5e13f3402d674fa88994b92ed72d6cdc1116707765d28bd7e0de31285"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/dh.h",
+      "sha256": "731a77b034eeacbb4fa5bcb6b67e413307a66451a9e2956cd5036a9087cb9d44"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/dherr.h",
+      "sha256": "9a9878ebd561a4fb1d38c8157d511f5de0893ac7b928f33b5cc52450bcc41a9d"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/dsa.h",
+      "sha256": "3e9b65a16899dd737b4c8fa99bd94f0cf94dcfb6ebea4a24e7b21fc92e409e46"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/dsaerr.h",
+      "sha256": "69c2ecff5f62898461bc521ea918abd2a673206dd5e8d43288ad25d2c012f163"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/dtls1.h",
+      "sha256": "1d1f404032a9eb31408c1f10bdff554d5740fb345b64b86fb74da8df95fbd901"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/e_os2.h",
+      "sha256": "41b036905ed3ab786e28ea619d353e18b5218ff98ab0cf79a6cfe7980842452e"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/e_ostime.h",
+      "sha256": "587a7593925c8d5b2f0dc3060904e3a4a7472be0ebc7dbfe2f6af6e40eb8bcc7"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ebcdic.h",
+      "sha256": "75a668c25c97853d5ba37ebce060a15152573242e3729d42830eba1daa642404"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ec.h",
+      "sha256": "0b028cf04ba8769a693f022725c91ef902a9e31f12a950180d1b4e8fa6952ff2"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ecdh.h",
+      "sha256": "5b99fdd1dfea38640ed8a506fb9b66db381cc26a1254448a81cc6b161e41850f"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ecdsa.h",
+      "sha256": "5b99fdd1dfea38640ed8a506fb9b66db381cc26a1254448a81cc6b161e41850f"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ecerr.h",
+      "sha256": "ce4fec7ee41de25a20abb7a9f00fe93305793a7bd2023d434b9aa6f64f91058a"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/encoder.h",
+      "sha256": "907d2f061c2972447d3f0c1cfc149c78791b1e4bdc131ad5a3eed1d084c76b41"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/encodererr.h",
+      "sha256": "63504766e9fcf36fe1527d95fe21460574896da187c60707bfa68254a35693b7"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/engine.h",
+      "sha256": "b48e5406717b26f41085dad8cc553e78c6cc54ea936df8ff1aa1312f32a6c053"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/engineerr.h",
+      "sha256": "8616a93b1b1bd8d1221844834817c28b7da78be1649a5b1780d9ea65fba8807c"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/err.h",
+      "sha256": "a19ec333cd352692990d7a6d1ba8918199ce2550012f300e7f6dcffa2e0992ee"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ess.h",
+      "sha256": "9da64664080d13f1f541f425dbac6305159d6c47309121427d77c67744c88de0"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/esserr.h",
+      "sha256": "e791193e891b0784670d5410539aeea9d2a8591de71495b4add6e7dbf9dc22cd"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/evp.h",
+      "sha256": "e7a29e795a165d60a4554bfa191e84e7210783b0d18325e4bb6970a2bbb9f75b"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/evperr.h",
+      "sha256": "3e11a8b5fa924cdcc314feb15fd874a7143453ad1bc3638b3fa6a38024dc6890"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/fips_names.h",
+      "sha256": "19e32043a3093329cca882db5348c7cfc9d3f7901d8294bf20e380763bd5d594"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/fipskey.h",
+      "sha256": "056f3c751af11919d3b7c87c33d5f014453a65bf82e95a7e2355149d5a718d3d"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/hmac.h",
+      "sha256": "e49fbe0086f8fbefa5648eef70bc84e8090a9226a1e3c6e856499373004aed0a"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/hpke.h",
+      "sha256": "a493c6bb10cd5155db251ee3c90996caf3374f16014b792c5a573ea5886bbcd1"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/http.h",
+      "sha256": "e370126879b70b15525bd313d93e6ee2df59f3ff66889befcf890507449d5bb1"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/httperr.h",
+      "sha256": "b50562e98d92c08e47e2b1b0bcf5652820b2a774652968a1188f9f2d87f2fe87"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/idea.h",
+      "sha256": "239122df15e738d7552dd76850c55a9ffe0136f33506c23d9058215a1255af66"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/kdf.h",
+      "sha256": "41756fe038443d1d270458d53d6e42ea78d12d980728b6a9284fa259958ea00a"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/kdferr.h",
+      "sha256": "3d9f27fffdb49e0ece9d5a62adbb9cc42c56262b00cc8ce7f956b2cb05a2a22d"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/lhash.h",
+      "sha256": "3608b3ed1845c776a719d3b6684ec6069f835a857e75bd33e1702de0d6ab0d54"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/macros.h",
+      "sha256": "3071da3bdac478c6f5f67976e95b0259785bc2ba4d27aeab7b905ce9882347d6"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/md2.h",
+      "sha256": "4add77ed047736979dc442a49d42921cce21e654a2dceef058d0191aa2d3c941"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/md4.h",
+      "sha256": "0472e597d139b44dd7d78d9093a5d8109417d18e9955fc940f1ea3e2e892ab44"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/md5.h",
+      "sha256": "308c901ec1a28f9b0098717f689ca63e104ce805050802d38b8f122d85ab2c78"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/mdc2.h",
+      "sha256": "42b844c9ae9e00e7c0b0e28858b8b3db7b8abf7e514e5e63f43456371ed3384b"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/modes.h",
+      "sha256": "4a8b3b1dafc15798a3b2bef0e3885275746e7fae73a0d96e55da55261554ba52"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/obj_mac.h",
+      "sha256": "c1a58899532495f99fd3c416d71819179663a66fbe272f64bb90ab057fa0e550"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/objects.h",
+      "sha256": "5fc6f3f0dd5e46fd409cb51ae1b331fec799fb6ef4b5efdc8ffbe264e5e83997"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/objectserr.h",
+      "sha256": "e17a8d7f62a1ef257fd90e604d4293bf02d5f81ae8198efe1e197c5b27baeb8c"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ocsp.h",
+      "sha256": "0e229d683a7e716a3834157218f692f0db7996f4b473da08c57ffdffbd661eb3"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ocsperr.h",
+      "sha256": "178329cfc042d3f1eb6e179206d844de41ba05ee4ac0ed9e3e6c861fb49d68ea"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/opensslconf.h",
+      "sha256": "890184233890bacd52fd420fef07befad411b9a318b97efbf36f46673d3e7841"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/opensslv.h",
+      "sha256": "395e27ea185fd9b03bb5cb859103907d099aac137962ba8da7599080abdd4fec"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ossl_typ.h",
+      "sha256": "76cb203ef3bcd305f4171e1d33f3f3319dee6354c2433493e5e9068aa79672fd"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/param_build.h",
+      "sha256": "3bf39b1037256466f1a89868621b2b62f1d05e63064159e60727041b170d55e3"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/params.h",
+      "sha256": "10d8e0157e339ee01f3b9c60c4b5bc60e6d4edce1084f0c9589ff75bf3a9f693"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/pem.h",
+      "sha256": "3c272adab77a71498899d9cd7c4c1b595ff4fe6d51b3d051907c4fd39816ef57"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/pem2.h",
+      "sha256": "a34a1607983b5f32be8ca49e75c3b41f1c9413b4eb777af144958283ecbd3922"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/pemerr.h",
+      "sha256": "843df90b1b434eed626bb6b8bccd5f6ed530e592d706584f56a725d254d8a5d2"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/pkcs12.h",
+      "sha256": "a6d90fb94cf452bc425cb499ef305854b2f99f2cb70f67b08ba28f960c79f4e9"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/pkcs12err.h",
+      "sha256": "fa281e5b93652e6c2c31393f62539d5252c125a4b1c4214f21fa321bd033da10"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/pkcs7.h",
+      "sha256": "e8834a010b0486ef7ed556ac0887261cb9f81892f5da5fd25243e361e235c982"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/pkcs7err.h",
+      "sha256": "9fe7a51f3de13b1fd03b319c64b8bd287164eb6ce7d3481994141c0be51396d5"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/prov_ssl.h",
+      "sha256": "31ded7f804f341c01c2f305187d1cf76daebe4426a1c6b4d2abc2b12d6e2d090"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/proverr.h",
+      "sha256": "51498c8317f8102afd8d7a15d0d2d19a62fb2ce55a66b4537aa6c9953a1912e4"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/provider.h",
+      "sha256": "1447ea059af6d57fe7101909f551667ffef85d43ebac74b668ff39ce7de7a13c"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/quic.h",
+      "sha256": "99c1fdf50129039b16af5b60ffb69638b7df4bc1c8b045299d7e480d4de90208"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/rand.h",
+      "sha256": "3ac0539d994400546be2710e3be80b4b8ea28772c06d549d514fc305e0aa077b"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/randerr.h",
+      "sha256": "455f8ca7562cbb97dc3d7f8ce2ce27a404ac2ae3a6d7219d45c48c54bc80f910"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/rc2.h",
+      "sha256": "08c6865d169a300e8bc818bd810f80ffb8a21d69e97dad88e400b586d0f3e965"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/rc4.h",
+      "sha256": "ea45836c253246c1d6f1b16b360dbb59322e26e28bfc54881d698e7cd5057666"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/rc5.h",
+      "sha256": "968c96ead08204edb8148981094700cbc3338ed0613c4469da5ab4675fa1ce29"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ripemd.h",
+      "sha256": "2e28edeb6613516db89e28c9d962301f4fe7b38366ebdd1d35933f3491d57b9d"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/rsa.h",
+      "sha256": "c30eeea9aef005afac36c1ec5565d4069194c088cb7a22930d7ba0ed814d7402"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/rsaerr.h",
+      "sha256": "a745e6b2835af7bb933e78870a270d51ab33778fe10a5cd377422d4b9587dcf0"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/safestack.h",
+      "sha256": "19ee08576dd9663c91a68ead50a8de4da6c6eb80bc67526b59015c766ddfec33"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/seed.h",
+      "sha256": "0d6d206f240f7bd6fa28cd4ec66b2b878f199af3ce6eda172af9fe31ebb71586"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/self_test.h",
+      "sha256": "780a17cecfd4f821d1293ababb5f560a111c67d32eace330d22ce40f03fee84d"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/sha.h",
+      "sha256": "553407b2787ef08f69396973063de06340097cb7e4c1569265a533b3567e1856"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/srp.h",
+      "sha256": "7f8fe9346e7b96fffab973029ebc955c6bb89e7556391281b0dd49205d49e33c"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/srtp.h",
+      "sha256": "20ddd75f9579087b24339e12c14b11939bca462e3cbc2e4b1867773407d6162a"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ssl.h",
+      "sha256": "5d2f8f10d12dd9a7fdf5e4188def6dfcec87c18870c8625dbbb857d3dd1590cd"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ssl2.h",
+      "sha256": "92e3330e2867bf17d3b305ba0f6fe6b073ad4bdb9db519e4224bbd993f1e9cb7"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ssl3.h",
+      "sha256": "f901dfcb95371c404b9e8b67d36ef2413a915447bd306e0f96237c97867a6146"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/sslerr.h",
+      "sha256": "1ffb3c381842fc1535ac05df29759177a8221cc8be95e2848bafa09fd0c33bc8"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/sslerr_legacy.h",
+      "sha256": "98401ca29f46694fff11304801d995015a7e4a81afe0db0a9a79a0bdde9e03d8"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/stack.h",
+      "sha256": "69f94382a15a3c4cfd1dda32108db5234727b36ed0e25f1fb12e0993c7b5ac95"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/store.h",
+      "sha256": "233e1f210c4757fc5e221a0727c938429078bc04e22376528b0fcf3f7307ac9b"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/storeerr.h",
+      "sha256": "370277e107a1b979ff5e0bd28f5adb92e066d41831ac37ce7108d2a1b84376f6"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/symhacks.h",
+      "sha256": "68b54776fa15943f3f018be6c7dc7a8847c9f512fb5eeec4f093804197dc2dfa"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/thread.h",
+      "sha256": "9390db912ff47887ff9cfba47b982379dc4a965fb2d085a2f34dc27141c07406"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/tls1.h",
+      "sha256": "01fe7c52e0093ad010e73fcf287f9729284c9b0ef5cda9766acc4c56bf24f3e6"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/trace.h",
+      "sha256": "f49ed49126448972dc92b38aa6a224d9bd8a738ef6b037116f5e0a7f8065a9db"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ts.h",
+      "sha256": "bc0c028affba178820caacf5f0b1ec085f12e644d77d2edf44184f8032103e98"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/tserr.h",
+      "sha256": "0d851cb9db84c48bb8a9871a988950fd0b62ecc854b11641e3e9a07fa191a6f6"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/txt_db.h",
+      "sha256": "1a6a6b331ef3cc6c632f782e8da2fa81aaeeac56e4d0b2fb3016f936805be257"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/types.h",
+      "sha256": "fd9a49f963f599a34792a56eea344ceb35b6958c9675169012cc3f6a484c2c11"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/ui.h",
+      "sha256": "71663d97e048fd14e4652af8402acb72200784b1940bd70b39b442c6d5c99bd9"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/uierr.h",
+      "sha256": "6f46dc9509b4d10802aaa1ad3c84763a2843312fdc8dd8add5c7b24e7f0c877f"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/whrlpool.h",
+      "sha256": "bb8f9f6ad1960e87f78363793130a0c1bee89b64a12eb32e939791fb0ca61016"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/x509.h",
+      "sha256": "b9a66dfa61aa1896846851873d486fe8f53faf55acd097114b938268363acb5c"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/x509_vfy.h",
+      "sha256": "366991bebf9416ac8c4f4bd703a670d6e106c178d7974fcc490a4d3d7bd0f134"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/x509err.h",
+      "sha256": "2f499bb7bbe947d9ed700d26debfad274c0233462d1dcf4504a8f339c11dbdb4"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/x509v3.h",
+      "sha256": "9420073e85e6b95877678f42eb7df49dcde26759d7a7c01716c5a68148584792"
+    },
+    {
+      "path": "build/ios/arm64/include/openssl/x509v3err.h",
+      "sha256": "294e1a37440b7d5fa1b780c385353f3e9aeb5eddcb6cca73d44bf4186698ee57"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/Array.h",
+      "sha256": "472fb77fa5c3490ffd54c216eb5c7acdfcdd2d55f5fe552cb92ccbade6174ba5"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/Boolean.h",
+      "sha256": "37a6e5ddec0d78b7d083544462d2948a7dfca1532cbde0c01169a017ddaff930"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/Data.h",
+      "sha256": "f55f51056a6dafd2b3c8b3e8c52602c4321ea39768f5f0c9ea64e21b3fa04633"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/Date.h",
+      "sha256": "1b2f341bb05d74c27d5138a6a9cae6a66586c26020b2f420d091c06c17943f97"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/Dictionary.h",
+      "sha256": "9252b4b1f90db1fdf08146b35d3d6018943df135640d28835a283f418904978a"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/Integer.h",
+      "sha256": "2229d832e8b5f5cbcbd43ac6649b7e50acf0f21020a2476efe72fe4e67321f13"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/Key.h",
+      "sha256": "806b610963c5aa729271c1e6750e30b1efcc5267c4e768599f8379c2dfed454c"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/Node.h",
+      "sha256": "c38bc3dcae889534b0d214b093ff6cc56805f25ea24979289774beaf9d725a91"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/Real.h",
+      "sha256": "4e05071c92650d0cf524ece765599a479b1d544b9219020b5227eb0e8ef53b9e"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/String.h",
+      "sha256": "d17ecb69c5cb5c2cd0ee92a009a8ff366fbceabcf6a927f98240eb7d8f2844dc"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/Structure.h",
+      "sha256": "2794d7f292b537deaaaacd0717e121f2cc242a50dce93596a90d781dfc2bed11"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/Uid.h",
+      "sha256": "c101bd72df5f13887965063212ec18e317383de37666766444c63dadf8df02e3"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/plist++.h",
+      "sha256": "73cf4f7ff61d8bac3f42e24e6871ba805d284aac3e3664f469c6770e2a200d9b"
+    },
+    {
+      "path": "build/ios/arm64/include/plist/plist.h",
+      "sha256": "04b27f5f75aae4ab1d2976e00189e52dc71d3bea53d44c13b750a9b5fcffb832"
+    },
+    {
+      "path": "build/ios/arm64/include/usbmuxd-proto.h",
+      "sha256": "cf73bdde39d2d87e18f266e48e1865642b3dc9a0e226461e1474c7ccc2eb0871"
+    },
+    {
+      "path": "build/ios/arm64/include/usbmuxd.h",
+      "sha256": "31d2924dde2069a6f3807d9f9bb88a0e18829b3b219c7b2826a73ef49e5670ce"
+    },
+    {
+      "path": "build/ios/arm64/lib/engines-3/capi.dylib",
+      "sha256": "c022e704305aa25af46136c2671acc1dda1c6501619237d05454d89bceca6a32"
+    },
+    {
+      "path": "build/ios/arm64/lib/engines-3/loader_attic.dylib",
+      "sha256": "10fc88c5ed4df892accbf2e3684cc7b9e71b4df5f1f9109ef417fb45689f4f64"
+    },
+    {
+      "path": "build/ios/arm64/lib/engines-3/padlock.dylib",
+      "sha256": "cb9acc74f0f4ebcfdcd2409426c8588768f7f67a69e5868422a8d2b3fced4697"
+    },
+    {
+      "path": "build/ios/arm64/lib/libcrypto.3.dylib",
+      "sha256": "5f78fceac9494a0ea72856aced990afb83838a0f4b5a498448271a6bcca9fd80"
+    },
+    {
+      "path": "build/ios/arm64/lib/libcrypto.a",
+      "sha256": "752dd6933625212cdab7afdfe3c6fcfe549c9e4bbacdb1f9499d04dc9fee7515"
+    },
+    {
+      "path": "build/ios/arm64/lib/libimobiledevice-1.0.6.dylib",
+      "sha256": "1169f88c9cea9bb92a756771f6b22631bfb986bf8f3906c2bc4155b86303b07d"
+    },
+    {
+      "path": "build/ios/arm64/lib/libimobiledevice-1.0.a",
+      "sha256": "73163f027c5fb8d2d1a7f3d265a83c866307bbfd69dce42bfb702e65351da594"
+    },
+    {
+      "path": "build/ios/arm64/lib/libimobiledevice-glue-1.0.0.dylib",
+      "sha256": "65bed2d14bc266f699c5fba4df3c813c9659fa5369bdb9dd14f8c14e1a7f3710"
+    },
+    {
+      "path": "build/ios/arm64/lib/libimobiledevice-glue-1.0.a",
+      "sha256": "fbde5488db21956d5632777060845d76b44c5b7a48cb3fc5ef00589405559334"
+    },
+    {
+      "path": "build/ios/arm64/lib/libplist++-2.0.4.dylib",
+      "sha256": "91185e438b5c7921d01cba14407372e38ee5ef13ea749f07c719aa6cd0c4ff14"
+    },
+    {
+      "path": "build/ios/arm64/lib/libplist++-2.0.a",
+      "sha256": "2fd6534ddc3839bb0bed8c7429dd15ab7af472882a3a24851ce9645ed1882ca3"
+    },
+    {
+      "path": "build/ios/arm64/lib/libplist-2.0.4.dylib",
+      "sha256": "1d62f9a493795db7edab1625f479671ad9e3ba1378c315331a174406335f8608"
+    },
+    {
+      "path": "build/ios/arm64/lib/libplist-2.0.a",
+      "sha256": "aa5096f4c0358e92bccdc9838fd12cafc615b3d58774140cdde01e77789c530a"
+    },
+    {
+      "path": "build/ios/arm64/lib/libssl.3.dylib",
+      "sha256": "9a153881ad8f93d19c4eebb3955796ce3903386486068ead4d46104188922f5e"
+    },
+    {
+      "path": "build/ios/arm64/lib/libssl.a",
+      "sha256": "0e938fa3bca882e2b563eee9357c09fcb353e7cc7702319ee3aa4c52c6f9e55f"
+    },
+    {
+      "path": "build/ios/arm64/lib/libtasn1.6.dylib",
+      "sha256": "a1aa521b624ab49883a44dc4e2dd52cec10b678c3bc0ad237f0120320d20b098"
+    },
+    {
+      "path": "build/ios/arm64/lib/libtasn1.a",
+      "sha256": "e0fbfd8046cb8d7c0b016819104d42ee51f193d8d3225d67df229c038ddd4ee9"
+    },
+    {
+      "path": "build/ios/arm64/lib/libusbmuxd-2.0.7.dylib",
+      "sha256": "bce903afa82312cc79f882ee51de94e19df15a8632a211635e4e123965ae312a"
+    },
+    {
+      "path": "build/ios/arm64/lib/libusbmuxd-2.0.a",
+      "sha256": "5f68d9d49a2dc6922efced775796ff49811e213363b9271931b46d50e5cadc23"
+    },
+    {
+      "path": "build/ios/arm64/lib/ossl-modules/legacy.dylib",
+      "sha256": "469ef0173e72460b2966b1e82c4823ff411e33bc56bdcedb5c82660ec540538e"
+    },
+    {
+      "path": "build/ios/arm64/lib/pkgconfig/libcrypto.pc",
+      "sha256": "3699b2b9b6f52921d6b0cde0be21636542cecc36597962b9f6fca03465164c88"
+    },
+    {
+      "path": "build/ios/arm64/lib/pkgconfig/libimobiledevice-1.0.pc",
+      "sha256": "7d111d7c4f487317fe0dab8ad890071ca6d61c9fa3cacb7ae7299b1add320482"
+    },
+    {
+      "path": "build/ios/arm64/lib/pkgconfig/libimobiledevice-glue-1.0.pc",
+      "sha256": "77cb32b16433ce051e8810a419297d56e153a96caceffabf205cb22a3f52cbf9"
+    },
+    {
+      "path": "build/ios/arm64/lib/pkgconfig/libplist++-2.0.pc",
+      "sha256": "792a18e405f638000129ad6c5cb369e61852ad94f7d6f046c29239dabf1dfee5"
+    },
+    {
+      "path": "build/ios/arm64/lib/pkgconfig/libplist-2.0.pc",
+      "sha256": "f6f745d7c077060c7d3a167b47dd6e20c0900d9801a95e7d46e135330564d9ff"
+    },
+    {
+      "path": "build/ios/arm64/lib/pkgconfig/libssl.pc",
+      "sha256": "176ae56cde9c8b65e26a74f97f94cb65af1a3d98f0fb5942c4edae2b277aa56f"
+    },
+    {
+      "path": "build/ios/arm64/lib/pkgconfig/libtasn1.pc",
+      "sha256": "30ca89727cbe00bfc712d1de9678306f50cb0354c7f99fdda9b77d987c7aad19"
+    },
+    {
+      "path": "build/ios/arm64/lib/pkgconfig/libusbmuxd-2.0.pc",
+      "sha256": "a7463e8186dcc188ea61f252cef8ecdb2daf591ee9df4ebf204e444de4fd1524"
+    },
+    {
+      "path": "build/ios/arm64/lib/pkgconfig/openssl.pc",
+      "sha256": "bd13536f54752919feb1f71673624e56e615eb78a8f717e4af8fff5d349e84ac"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libimobiledevice/AUTHORS",
+      "sha256": "4920ad8427644a779b6d12a51121d69cdb609f26fdfff322c22efa5de7ffb584"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libimobiledevice/COPYING",
+      "sha256": "7619c753cac95d4740220223bde48a032606fcaccde5e546f9bc444c81ab356d"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libimobiledevice/COPYING.LESSER",
+      "sha256": "e237fa56668030e928551ddd60f05df5fe957f75eab874bbd017e085ed722e7c"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libimobiledevice/provenance.json",
+      "sha256": "fe5cdf021a8e0d1170f31bf6638c4eb747853068a360bcbfdee14da981dcffdc"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libimobiledevice-glue/COPYING",
+      "sha256": "e237fa56668030e928551ddd60f05df5fe957f75eab874bbd017e085ed722e7c"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libimobiledevice-glue/provenance.json",
+      "sha256": "21aa2895b63d8562f6a146e4b287515cc595777ab62924413d193d5ecf01dafb"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libplist/AUTHORS",
+      "sha256": "9ee5828311bc47160791e9fc1574cb356d9d6a661b1d194a97cd254d58c9d3b9"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libplist/COPYING",
+      "sha256": "7619c753cac95d4740220223bde48a032606fcaccde5e546f9bc444c81ab356d"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libplist/COPYING.LESSER",
+      "sha256": "e237fa56668030e928551ddd60f05df5fe957f75eab874bbd017e085ed722e7c"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libplist/provenance.json",
+      "sha256": "f9c9cc68154899aac7690d6d7a6bee52288919375c9762e2e3cbc349c7697f11"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libtasn1/AUTHORS",
+      "sha256": "fb00a53c054e6e23bfdd1481b71e40a9246095e110567483841371e05a984812"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libtasn1/COPYING",
+      "sha256": "7446831f659f7ebfd8d497acc7f05dfa8e31c6cb6ba1b45df33d4895ab80f5a6"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libtasn1/provenance.json",
+      "sha256": "95885526c42e8bfa2c6819a63f1e4f9fddbb05ae57c53dad104bcc56ebb91a3c"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libusbmuxd/AUTHORS",
+      "sha256": "f76632e73560fb36850d2d70cf72960240a82d8c527022a4165370f8a81fa9fc"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libusbmuxd/COPYING",
+      "sha256": "e237fa56668030e928551ddd60f05df5fe957f75eab874bbd017e085ed722e7c"
+    },
+    {
+      "path": "build/ios/arm64/licenses/libusbmuxd/provenance.json",
+      "sha256": "242fec937d5f8aab3c1c56e460beeba417410e0662f37cf600b3db2d382e25b2"
+    },
+    {
+      "path": "build/ios/arm64/licenses/openssl@3/AUTHORS.md",
+      "sha256": "5076ca441daef7fb35e904c2ac070880c7b3d58300a5a6aecac41e8f525f4412"
+    },
+    {
+      "path": "build/ios/arm64/licenses/openssl@3/LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "build/ios/arm64/licenses/openssl@3/provenance.json",
+      "sha256": "e420d5fa3238d8af0ea566212ed06d59303afcf64445a8836f4a02b377f13a75"
+    },
+    {
+      "path": "build/mirror/LICENSE.scrcpy",
+      "sha256": "5e6597827749877cca06765747bf29ed9205ed5021c6aec1ad42373711bcda05"
+    },
+    {
+      "path": "build/mirror/SHA256SUMS.txt",
+      "sha256": "4051b59bf58fed3b72ec8bc23e993518884acb8f8cd2fddfda7700cc6940957f"
+    },
+    {
+      "path": "build/mirror/scrcpy-server-v3.3.4",
+      "sha256": "8588238c9a5a00aa542906b6ec7e6d5541d9ffb9b5d0f6e1bc0e365e2303079e"
+    },
+    {
+      "path": "tools/adb/NOTICE.txt",
+      "sha256": "f74735e1636534c2165b51815c4de870a2a06c24d8fe3e8c91149c841b81d33e"
+    },
+    {
+      "path": "tools/adb/adb",
+      "sha256": "5759ea07285e5a5b66d84f489c118a3fa3998e69cd37725e5a3dc7cbe0597278",
+      "executable": true
+    },
+    {
+      "path": "tools/hdc/README.md",
+      "sha256": "7d82806a3cf210fbeaa478726076a22c69883d3c8bbbb2adda52512ac38aa90b"
+    },
+    {
+      "path": "tools/hdc/hdc_arm64",
+      "sha256": "26dac6adf0963d0ebe4b2cbaf60d1ee74d6a993a998340de18c5df587e41c797",
+      "executable": true
+    },
+    {
+      "path": "tools/hdc/hdc_x86_64",
+      "sha256": "3937bdc65cca679659a8dd9ef791e4fda318d86b618d5778a6e7163c17bf4c11",
+      "executable": true
+    },
+    {
+      "path": "tools/hdc/libusb_shared_arm64.dylib",
+      "sha256": "ae0dbd1a121fb81e7c455ffb4681340ec75532856ca888905dbbe0d67d7526c5",
+      "executable": true
+    },
+    {
+      "path": "tools/hdc/libusb_shared_x86_64.dylib",
+      "sha256": "d46993f65704fdbd1b5be447a01f59b32af988eed81ea2aef7304fc170e9e226",
+      "executable": true
+    }
+  ],
+  "symlinks": [
+    {
+      "path": "build/ios/amd64/lib/libcrypto.dylib",
+      "target": "libcrypto.3.dylib"
+    },
+    {
+      "path": "build/ios/amd64/lib/libimobiledevice-1.0.dylib",
+      "target": "libimobiledevice-1.0.6.dylib"
+    },
+    {
+      "path": "build/ios/amd64/lib/libimobiledevice-glue-1.0.dylib",
+      "target": "libimobiledevice-glue-1.0.0.dylib"
+    },
+    {
+      "path": "build/ios/amd64/lib/libplist++-2.0.dylib",
+      "target": "libplist++-2.0.4.dylib"
+    },
+    {
+      "path": "build/ios/amd64/lib/libplist-2.0.dylib",
+      "target": "libplist-2.0.4.dylib"
+    },
+    {
+      "path": "build/ios/amd64/lib/libssl.dylib",
+      "target": "libssl.3.dylib"
+    },
+    {
+      "path": "build/ios/amd64/lib/libtasn1.dylib",
+      "target": "libtasn1.6.dylib"
+    },
+    {
+      "path": "build/ios/amd64/lib/libusbmuxd-2.0.dylib",
+      "target": "libusbmuxd-2.0.7.dylib"
+    },
+    {
+      "path": "build/ios/arm64/lib/libcrypto.dylib",
+      "target": "libcrypto.3.dylib"
+    },
+    {
+      "path": "build/ios/arm64/lib/libimobiledevice-1.0.dylib",
+      "target": "libimobiledevice-1.0.6.dylib"
+    },
+    {
+      "path": "build/ios/arm64/lib/libimobiledevice-glue-1.0.dylib",
+      "target": "libimobiledevice-glue-1.0.0.dylib"
+    },
+    {
+      "path": "build/ios/arm64/lib/libplist++-2.0.dylib",
+      "target": "libplist++-2.0.4.dylib"
+    },
+    {
+      "path": "build/ios/arm64/lib/libplist-2.0.dylib",
+      "target": "libplist-2.0.4.dylib"
+    },
+    {
+      "path": "build/ios/arm64/lib/libssl.dylib",
+      "target": "libssl.3.dylib"
+    },
+    {
+      "path": "build/ios/arm64/lib/libtasn1.dylib",
+      "target": "libtasn1.6.dylib"
+    },
+    {
+      "path": "build/ios/arm64/lib/libusbmuxd-2.0.dylib",
+      "target": "libusbmuxd-2.0.7.dylib"
+    }
+  ]
+}

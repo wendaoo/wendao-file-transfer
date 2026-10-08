@@ -1,0 +1,25 @@
+{
+  "package": "libimobiledevice-glue",
+  "version": "1.2.0",
+  "sha256": "005fde87e6014290eb3c9e08712b6dc93dc3febf2d56c44094f37f34fe149d10",
+  "source": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2024-03-24",
+    "org.opencontainers.image.description": "Library with common system API code for libimobiledevice projects",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/libimobiledevice-glue",
+    "org.opencontainers.image.license": "LGPL-2.1-or-later",
+    "org.opencontainers.image.ref.name": "1.2.0",
+    "org.opencontainers.image.revision": "8279ae3233bd13356cec703ff421e5624b9a7786",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/8279ae3233bd13356cec703ff421e5624b9a7786/Formula/lib/libimobiledevice-glue.rb",
+    "org.opencontainers.image.title": "libimobiledevice-glue",
+    "org.opencontainers.image.url": "https://libimobiledevice.org/",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "1.2.0"
+  },
+  "bottle": {
+    "org.opencontainers.image.ref.name": "1.2.0.arm64_ventura",
+    "sh.brew.bottle.digest": "005fde87e6014290eb3c9e08712b6dc93dc3febf2d56c44094f37f34fe149d10",
+    "sh.brew.bottle.size": "64083",
+    "sh.brew.tab": "{\"homebrew_version\":\"4.2.13-140-g9a1793a\",\"changed_files\":[\"lib/pkgconfig/libimobiledevice-glue-1.0.pc\"],\"source_modified_time\":1711251326,\"compiler\":\"clang\",\"runtime_dependencies\":[{\"full_name\":\"libplist\",\"version\":\"2.4.0\",\"revision\":0,\"pkg_version\":\"2.4.0\",\"declared_directly\":true}],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 13.6\",\"cpu_family\":\"dunno\",\"xcode\":\"15.2\",\"clt\":\"15.1.0.0.1.1700200546\",\"preferred_perl\":\"5.30\"}}"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "package": "libtasn1",
+  "version": "4.19.0",
+  "sha256": "9fcf93a7992888a29caf2bc3ad37fb27ee8ceef180367797f4a11040fa761eac",
+  "source": {
+    "com.github.package.type": "homebrew_bottle",
+    "org.opencontainers.image.created": "2022-08-24",
+    "org.opencontainers.image.description": "ASN.1 structure parser library",
+    "org.opencontainers.image.documentation": "https://formulae.brew.sh/formula/libtasn1",
+    "org.opencontainers.image.license": "LGPL-2.1-or-later",
+    "org.opencontainers.image.ref.name": "4.19.0",
+    "org.opencontainers.image.revision": "1a7acf823333dda2e033633adedfdcdf07a62179",
+    "org.opencontainers.image.source": "https://github.com/homebrew/homebrew-core/blob/1a7acf823333dda2e033633adedfdcdf07a62179/Formula/libtasn1.rb",
+    "org.opencontainers.image.title": "libtasn1",
+    "org.opencontainers.image.url": "https://www.gnu.org/software/libtasn1/",
+    "org.opencontainers.image.vendor": "homebrew",
+    "org.opencontainers.image.version": "4.19.0"
+  },
+  "bottle": {
+    "org.opencontainers.image.ref.name": "4.19.0.arm64_ventura",
+    "sh.brew.bottle.digest": "9fcf93a7992888a29caf2bc3ad37fb27ee8ceef180367797f4a11040fa761eac",
+    "sh.brew.tab": "{\"homebrew_version\":\"3.6.6-34-gfaa9950\",\"changed_files\":[\"lib/pkgconfig/libtasn1.pc\"],\"source_modified_time\":1661276345,\"compiler\":\"clang\",\"runtime_dependencies\":[],\"arch\":\"arm64\",\"built_on\":{\"os\":\"Macintosh\",\"os_version\":\"macOS 13\",\"cpu_family\":\"dunno\",\"xcode\":\"14.1\",\"clt\":\"14.1.0.0.1.1665256668\",\"preferred_perl\":\"5.30\"}}"
+  }
+}
